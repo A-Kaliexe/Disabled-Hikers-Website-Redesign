@@ -1,1 +1,44 @@
+/*Reset Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/*Global Styles*/
+/* Add styles specific throughout entire website */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Index/Landing Page styles */
+#index {
+    /* Add styles specific to the index page */
+}
+
+
+/* Form Page styles */
+#form {
+    /* Add styles specific to the form page */
+}
+
+
+/* About Page styles */
+#about {
+    /* Add styles specific to the about page */
+}
+
+
+/* Community Page styles */
+#community {
+    /* Add styles specific to the community page */
+}
+
+
+/* Trails Page styles */
+#trails {
+    /* Add styles specific to the trails page */
+}
+
+
+/*Media Queries*/
