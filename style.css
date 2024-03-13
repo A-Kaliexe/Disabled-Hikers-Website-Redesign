@@ -30,9 +30,8 @@ body {
 
 
 /* Community Page styles */
-.community {
-    /* Add styles specific to the community page */
-    /* Targeting Only the Community Page */
+/* Add styles specific to the community page */
+/* Targeting Only the Community Page */
 
 .community header h1 {
     /* Styles for the header h1 on the community page */
@@ -42,7 +41,7 @@ body {
     /* Styles for the main grid on the community page */
 }
 
-.community.sidebar-left {
+.community .sidebar-left {
     /* Styles for the left sidebar on the community page */
 }
 
@@ -52,8 +51,6 @@ body {
 
 .community .newsletter {
     /* Styles for the newsletter section on the community page */
-}
-
 }
 
 
