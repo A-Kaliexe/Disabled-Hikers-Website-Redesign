@@ -12,31 +12,53 @@ body {
 }
 
 /* Index/Landing Page styles */
-#index {
+.index {
     /* Add styles specific to the index page */
 }
 
 
 /* Form Page styles */
-#form {
+.form {
     /* Add styles specific to the form page */
 }
 
 
 /* About Page styles */
-#about {
+.about {
     /* Add styles specific to the about page */
 }
 
 
 /* Community Page styles */
-#community {
+.community {
     /* Add styles specific to the community page */
+    /* Targeting Only the Community Page */
+
+.community header h1 {
+    /* Styles for the header h1 on the community page */
+}
+
+.community main.grid {
+    /* Styles for the main grid on the community page */
+}
+
+.community.sidebar-left {
+    /* Styles for the left sidebar on the community page */
+}
+
+.community .sidebar-right {
+    /* Styles for the right sidebar on the community page */
+}
+
+.community .newsletter {
+    /* Styles for the newsletter section on the community page */
+}
+
 }
 
 
 /* Trails Page styles */
-#trails {
+.trails {
     /* Add styles specific to the trails page */
 }
 
