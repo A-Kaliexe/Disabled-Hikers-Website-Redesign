@@ -7,8 +7,23 @@
 
 /*Global Styles*/
 /* Add styles specific throughout entire website */
-body {
-    font-family: Arial, sans-serif;
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+footer p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Index/Landing Page styles */
@@ -33,7 +48,7 @@ body {
 /* Add styles specific to the community page */
 /* Targeting Only the Community Page */
 
-.community header h1 {
+.community  {
     /* Styles for the header h1 on the community page */
 }
 
