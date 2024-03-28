@@ -181,8 +181,122 @@ footer p {
 
 /* About Page styles */
 .about {
-    /* Add styles specific to the about page */
-}
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: #fabd48;
+        border-radius: 18%;
+        display: inline;
+        padding: 0 10px;
+        font-family:
+    }
+    
+    
+    .top_quote {
+        text-align: center;
+        font-size: 14pt;
+        padding-block-start: .5cm;
+    }
+    .background_header{
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .story {
+        text-align: center;
+        padding-block-end: 1cm;
+        padding-left: 3cm;
+        padding-right: 3cm;
+    }
+    .people{
+        text-align: center;
+        padding-bottom: cm;
+    }
+    .team_container {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto; 
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+        padding-block-end: 1cm;
+        padding-left: 1cm;
+        padding-right:1cm;
+    }
+
+    .board_container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows:auto auto auto auto;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center; 
+        padding-block-end: 1cm;
+        padding-left: 3cm;
+        padding-right: 3cm;
+        background-color: 
+
+    }
+    .impact_container{
+        display: grid;
+        grid-template-rows: 100px;
+        grid-template-columns: 200px 200px 200px ;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+        font-size: 12pt;
+        padding-block-end: 2cm;
+        padding-left: 3cm;
+        padding-right:3cm;
+    }
+    .button{
+        background-color: #D77028;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 8px;
+        font-family: 'Montserrat', sans-serif;
+        }
+    .footer{
+        text-align: center;
+        font-size: 12pt;
+        background: #fabd48;
+        font-weight: bold;
+    }
+    .support{
+        text-align: center;
+    }
+    p.footer{
+        text-align: left;
+        color: black;
+    }
+    .image{
+        width: 100%;
+        height: auto;
+    }
+    .text{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        transorm: translate(-50%, -50%);
+        z-index: 1;
+        background: none;
+    }
+    }
 
 
 /* Community Page styles */
