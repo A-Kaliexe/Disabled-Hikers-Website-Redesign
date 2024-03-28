@@ -31,7 +31,74 @@ footer p {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*Nav Bar*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
+    color: #283618;
+    background-color: #fefae0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+/* Navigation Bar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+/* Typography */
+body {
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    /* Adjusted text color */
+    background-color: #f9f9f9ee;
+    /* Adjusted background color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 28px;
+
+}
+
+p {
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+/* Global Nav Menu */
 .fixed-nav-bar {
     position: fixed;
     top: 0;
@@ -67,7 +134,7 @@ footer p {
 
 .fixed-nav-bar.scrolled {
     min-height: 60px;
-    background-color: #fefae0;
+    background-color: #345223;
     /* Ensure background color remains opaque when scrolled */
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
@@ -134,32 +201,37 @@ footer p {
 }
 
 /* Adjustments for Drop-down Menu Items */
-.drop-down-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
+* Your existing CSS styles */
+
+/* Add hover effect for dropdown items */
+.drop-down-container .drop-down-item:hover {
+    color: #fff;
+    background-color: #345223;
+    /* Background color when hovered */
 }
 
+/* Adjust dropdown item styles */
 .drop-down-container .drop-down-item {
     display: block;
     padding: 15px 0;
     color: #D77028;
     font-size: 20px;
-    Font-weight: bold;
+    font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Added transition for smooth hover effect */
 }
 
-.drop-down-container .drop-down-item:hover {
-    color: #fff;
-}
-
-.fixed-nav-bar .subheading {
-    margin-top: 70px;
-}
-
+/* Updated responsive styles */
 @media screen and (max-width: 768px) {
     .nav-menu {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.753);
+        /* Ensure background color remains visible */
+    }
+
+    /* Adjust dropdown container width */
+    .drop-down-container {
         width: 100%;
     }
 }

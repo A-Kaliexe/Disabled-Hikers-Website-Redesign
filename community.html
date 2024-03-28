@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="script.js" defer></script>
-    <title>Community Page</title>
-</head>
-<body class="community">
-   
-        <!-- Navigation Only-->
-    <header class="fixed-nav-bar" id="nav">
-      <div class="logo"><span class="logo-color">Disabled</span> Hikers</div>
-      <!-- <p class="subheading">Disability Community & Justice in the Outdoors</p>-->
-      <input type="checkbox" id="menuButton" />
-      <label for="menuButton" class="menu-button-label">
-        <div class="white-bar"></div>
-        <div class="white-bar"></div>
-        <div class="white-bar"></div>
-      </label>
-      <nav class="nav-menu" id="menu">
-        <div class="drop-down-container">
-          <a href="#" class="drop-down-item">Home</a>
-          <a href="#" class="drop-down-item">About Us</a>
-          <a href="#" class="drop-down-item">Trails</a>
-          <a href="#" class="drop-down-item">Community</a>
-          <a href="#" class="drop-down-item">Contact</a>
-        </div>
-      </nav>
-    </header>
-    
 
-    <!-- Main Content -->
-    <main class="grid">
-        <aside class="sidebar-left">
-            <h2>About Us</h2>
-            <p>The Storytelling Project is more than just a community; it's a journey of words and tales.</p>
-            <h2>Upcoming Adventures</h2>
-            <p>Discover our upcoming hiking adventures tailored for all levels of experience and abilities. Join us as we explore the beauty of the great outdoors!</p>
-            <h2>Be Part of the Adventure!</h2>
-            <p>Engage with fellow hikers, share your experiences, and find inspiration on our vibrant social media channels!</p>
-        </aside>
-        <aside class="sidebar-right">
-            <div class="newsletter-image">
-                
-<!--add image to placeholder-->
-                <img src="placeholder/newsletter-image.jpg" alt="Newsletter Image"> 
-                
-            </div>
-        </aside>
-        <section class="newsletter">
-            <h2>Join our Newsletter</h2>
-            <!-- Newsletter form or content -->
-            <p>Subscribe to our newsletter to receive the latest updates on accessible trails, community events, and inspiring stories from fellow hikers!</p>
-            <form action="subscribe.php" method="POST">
-            <form action="subscribe.php" method="POST">
-                <input type="email" name="email" placeholder="Your Email" required>
-                <button type="submit">Subscribe</button>
-            </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <title>Community Page</title>
+</head>
+
+<body class="community">
+
+  <!-- Navigation Only-->
+  <header class="fixed-nav-bar" id="nav">
+    <div class="logo"><span class="logo-color">Disabled</span> Hikers</div>
+    <!-- <p class="subheading">Disability Community & Justice in the Outdoors</p>-->
+    <input type="checkbox" id="menuButton" />
+    <label for="menuButton" class="menu-button-label">
+      <div class="white-bar"></div>
+      <div class="white-bar"></div>
+      <div class="white-bar"></div>
+    </label>
+    <nav class="nav-menu" id="menu">
+      <div class="drop-down-container">
+        <a href="index.html" class="drop-down-item">Home</a>
+        <a href="about.html" class="drop-down-item">About Us</a>
+        <a href="trails.html" class="drop-down-item">Trails</a>
+        <a href="community.html" class="drop-down-item">Community</a>
+        <a href="contact.html" class="drop-down-item">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main Content -->
+  <main class="grid">
+    <aside class="sidebar-left">
+      <h2>About Us</h2>
+      <p>The Storytelling Project is more than just a community; it's a journey of words and tales.</p>
+      <h2>Upcoming Adventures</h2>
+      <p>Discover our upcoming hiking adventures tailored for all levels of experience and abilities. Join us as we
+        explore the beauty of the great outdoors!</p>
+      <h2>Be Part of the Adventure!</h2>
+      <p>Engage with fellow hikers, share your experiences, and find inspiration on our vibrant social media channels!
+      </p>
+    </aside>
+    <aside class="sidebar-right">
+      <div class="newsletter-image">
+
+        <!--add image to placeholder-->
+        <img src="placeholder/newsletter-image.jpg" alt="Newsletter Image">
+
+      </div>
+    </aside>
+    <section class="newsletter">
+      <h2>Join our Newsletter</h2>
+      <!-- Newsletter form or content -->
+      <p>Subscribe to our newsletter to receive the latest updates on accessible trails, community events, and inspiring
+        stories from fellow hikers!</p>
+      <form action="subscribe.php" method="POST">
+        <form action="subscribe.php" method="POST">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <button type="submit">Subscribe</button>
+        </form>
 </body>
+
 </html>
