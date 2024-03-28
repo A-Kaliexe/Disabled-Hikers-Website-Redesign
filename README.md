@@ -38,11 +38,11 @@ To view the website and contribute to the project:
 This project is currently under development. Check back for updates and improvements.
 
 ## Contributors
-- [Name](https://github.com/niashalise)
-- [Name](https://github.com/ohall3254)
-- [Name](https://github.com/akianghi)
-- [Name](https://github.com/five-starr)
-- [Name](https://github.com/A-Kaliexe)
+- [NiaShalise](https://github.com/niashalise)
+- [Ohall3254](https://github.com/ohall3254)
+- [Akianghi](https://github.com/akianghi)
+- [Five-starr](https://github.com/five-starr)
+- [A-Kaliexe](https://github.com/A-Kaliexe)
 
 ## Feedback
 If you have any feedback, suggestions, or bug reports, please open an issue on GitHub.
