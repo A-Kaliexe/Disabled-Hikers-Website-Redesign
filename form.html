@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+        </style>
     <script src="script.js" defer></script>
     <title>Form Page</title>
-  </head>
-  <body class="form"></body>
+</head>
+<body>
+    <div class="contact-container">
+    <h1 class="contact-us">Contact Us</h1>
+        <p class="contact-para">We look forward to hearing from you!</p>
+        <form class="inline-form">
+                <label for="first-name" class="first-name">*First Name: </label><br><input type="text" id="first-name" required><br>
+                <label for="last-name" class="last-name">*Last Name: </label><br><input type="text" id="last-name" required><br>
+                <label for="email" class="email">*Email Address: </label><br><input type="email" id="email" required><br>
+                <label for="subject" class="subject">*Subject: </label><br><input type="text" id="subject" placeholder="e.g. General Inquiry, Speaking Request, Event Question, etc" required><br>
+                <label for="message" class="message">*Message: </label><br><textarea id="message" name="message" rows="6" cols="95" placeholder="Please include any pertinent information we should know about event, speaking request, etc"></textarea><br>
+        </form>
+        <button type="submit" class="submit">Submit</button>
+    </div>
+</body>
 </html>
