@@ -7,177 +7,36 @@
 
 /*Global Styles*/
 /* Add styles specific throughout entire website */
-p {
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-image: url(https://static.wixstatic.com/media/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg/v1/fill/w_1322,h_1443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg);
 }
 
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 2px;
+html {
+    height: 100%
 }
 
-nav ul li a {
-    font-family: 'Montserrat', sans-serif;
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
-
-/* Footer */
-footer p {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*Nav Bar*/
-.fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.60);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content {
-    padding-top: 100px;
-}
-
-.fixed-nav-bar .logo {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-transform: uppercase;
-    color: #333;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.fixed-nav-bar.scrolled {
-    min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled */
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
-}
-
-#menuButton {
-    display: none;
-}
-
-.menu-button-label {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 100;
-}
-
-.menu-button-label .white-bar {
-    position: absolute;
-    height: 2px;
-    width: 66%;
-    background-color: #ccc;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
-}
-
-.menu-button-label .white-bar:nth-child(1) {
-    top: 20%;
-}
-
-.menu-button-label .white-bar:nth-child(2) {
-    top: 50%;
-}
-
-.menu-button-label .white-bar:nth-child(3) {
-    top: 80%;
-}
-
-
-/* Dropdown Menu */
-.nav-menu {
-    display: none;
-    /* Hide the dropdown menu by default */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.753);
-    transition: 0.35s ease, width 0.35s ease;
-    z-index: 80;
-    overflow-y: auto;
-}
-
-/*Men when Dropped*/
-.nav-menu.dropped {
-    display: block;
-    /* Show the dropdown menu when dropped class is added */
-    height: 35vh;
-    padding: 5px 0;
-    transition: height 0.45s ease;
-}
-
-/* Adjustments for Drop-down Menu Items */
-.drop-down-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-.drop-down-container .drop-down-item {
-    display: block;
-    padding: 15px 0;
-    color: #D77028;
-    font-size: 20px;
-    Font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.drop-down-container .drop-down-item:hover {
-    color: #fff;
-}
-
-.fixed-nav-bar .subheading {
-    margin-top: 70px;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        width: 100%;
-    }
-}
-
-/*End of Global Styles*/
-
 
 /* Index/Landing Page styles */
 .index {
     /* Add styles specific to the index page */
 }
-
-
-/* Form Page styles */
-.form {
-    /* Add styles specific to the form page */
-}
-
 
 /* About Page styles */
 .about {
@@ -189,7 +48,7 @@ footer p {
 /* Add styles specific to the community page */
 /* Targeting Only the Community Page */
 
-.community {
+.community header h1 {
     /* Styles for the header h1 on the community page */
 }
 
@@ -215,5 +74,140 @@ footer p {
     /* Add styles specific to the trails page */
 }
 
+/* Form Page Styles */
+.contact-container {
+    height: 900px;
+    width: 1000px;
+    background-color: #DDA15E;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.contact-us {
+    color: #283618;
+    margin-left: 380px;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 50px;
+}
+
+.contact-para {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 350px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.inline-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.inline-form label {
+    margin: 5px 50px 25px 0px;
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.inline-form input {
+    vertical-align: middle;
+    margin: 5px 50px 25px 0px;
+    padding: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+.submit {
+    padding: 30px 60px;
+    margin: 100px 400px;
+    background-color: #FEFAE0;
+    color: #283618;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.submit:hover {
+    background-color: #D77028;
+}
+
+
+
+/*
+#first-name {
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+}
+
+.first-name {
+    margin-left: 80px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#last-name {
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+}
+
+.last-name {
+    margin-left: 80px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#email {
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+}
+
+.email {
+    margin-left: 80px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#subject {
+    margin-left: 80px;
+    width: 400px;
+    height: 30px;
+}
+
+.subject {
+    margin-left: 80px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#message {
+    margin-left: 80px;
+}
+
+.message {
+    margin-left: 80px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+::placeholder {
+    color: #34522366;
+}
+
+.submit {
+    padding: 20px;
+    margin: 20px 300px;
+}
+*/
 
 /*Media Queries*/
+
+
