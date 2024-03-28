@@ -236,6 +236,49 @@ p {
     }
 }
 
+/*Newsletter and Donate Section*/
+/* newsletter and donate section */
+.news-donate {
+    background-color: #283618;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.newsletter,
+.support-us {
+    width: 45%;
+}
+
+.newsletter h2,
+.support-us h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/*Buttons*/
+.subscribe-btn,
+.donate-btn {
+    padding: 15px 25px;
+    background-color: #DDA15E;
+    color: #232323;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover,
+.donate-btn:hover {
+    background-color: #D77028;
+}
+
 /*End of Global Styles*/
 
 
@@ -568,7 +611,7 @@ p {
         position: absolute;
         top: 30%;
         left: 25%;
-        transorm: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         z-index: 1;
         background: none;
     }
@@ -576,7 +619,7 @@ p {
 
 
 /* Community Page styles */
-//* Banner */
+/* Banner */
 body.community .banner {
     background-image: url("images/banner-design.jpg");
     background-position: center;
@@ -605,6 +648,7 @@ body.community .container {
     height: auto;
 }
 
+/*Community Logo*/
 .logo-img {
     max-width: 20px;
     max-height: 20%;
@@ -624,13 +668,27 @@ body.community.story,
     background-color: #FEFAE0;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+body.community .upcoming-events,
+.insta-widget,
+.social-media {
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.185);
 }
 
 body.community .story h2,
 .feature h2 {
-    font-size: 24px;
+    font-size: 60px;
+    color: #283618;
     margin-bottom: 20px;
+}
+
+body.community h2 {
+    color: #D77028;
+    font-size: 50px;
+
 }
 
 body.community .story {
@@ -658,37 +716,10 @@ body.community.main-content .feature p {
     text-align: center;
 }
 
-/* Footer */
-body.community .news-donate {
-    background-color: #283618;
-    color: #fff;
-    padding: 50px 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 
-/*Newsletter*/
-body.community .newsletter,
-.support-us {
-    width: 45%;
-}
-
-body.community.newsletter h2,
-.support-us h2 {
-    margin-bottom: 20px;
-}
-
-body.community .newsletter input[type="email"] {
-    width: 50%;
-    padding: 15px;
-    border-radius: 10px;
-}
-
+/
 /*Buttons*/
-body.community .subscribe-btn,
-.donate-btn,
-.cta-btn {
+body.community .cta-btn {
     padding: 15px 25px;
     background-color: #DDA15E;
     color: #232323;
@@ -697,9 +728,7 @@ body.community .subscribe-btn,
     cursor: pointer;
 }
 
-body.community .subscribe-btn:hover,
-.donate-btn:hover,
-.cta-btn {
+body.community .cta-btn {
     background-color: #D77028;
 }
 
