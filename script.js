@@ -11,6 +11,7 @@ $(document).ready(function () {
 });
 
 /* HOME PAGE - END (I forget what exactly it impacts) */
+
 document.addEventListener("DOMContentLoaded", function () {
   // Function to toggle the visibility of the dropdown menu
   document.getElementById("menuButton").addEventListener("change", function () {
