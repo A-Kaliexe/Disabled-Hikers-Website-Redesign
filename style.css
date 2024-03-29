@@ -482,10 +482,200 @@ p {
 
 
 /* Form Page styles */
-.form {
-    /* Add styles specific to the form page */
+.form-body {
+    background-image: url(https://static.wixstatic.com/media/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg/v1/fill/w_1322,h_1443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.contact-container {
+    height: 900px;
+    width: 1000px;
+    background-color: #DDA15E;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: 150px;
+    border-radius: 50px;
+}
+
+.contact-us {
+    color: #345223;
+    margin-left: 380px;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 50px;
+}
+
+.contact-para {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 350px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.inline-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.form-group label {
+    text-align: left;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    color:#000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group input {
+    height: 30px;
+    width: 78.5%;
+    margin-left: 105px;
+}
+
+#message {
+    width: 78%;
+    margin-left: 105px;
+}
+
+.form-names {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 75px;
+}
+
+.form-names label {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding-right: 10px;
+    font-family: "Montserrat", sans-serif;
+    color:#000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-names input {
+    height: 30px;
+    width: 240px;
+    padding: 10px;
+}
+
+.form-email {
+    display:flex;
+    flex-direction: row;
+    margin: 10px 75px;
+}
+
+.form-email label {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding-right: 5px;
+    font-family: "Montserrat", sans-serif;
+    color:#000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-email input {
+    height: 30px;
+    width: 73.5%;
+}
+
+.submit {
+    padding: 30px 60px;
+    margin: 100px 400px;
+    background-color: #FEFAE0;
+    color: #283618;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.submit:hover {
+    background-color: #D77028;
+    color: #FEFAE0;
+}
+
+h4 {
+    font-family: "Bebas Neue", sans-serif;
+    color:#345223;
+    margin-left: 105px;
+    font-size: 30px;
+}
+
+.speaking-req {
+    margin-left: 105px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 50px;
+    margin-right: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 500px 500px 200px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+    margin-top: 100px;
+    height: 200px;
+    background-color: #FEFAE0;
+}
+
+.item2,
+.item3 {
+    border: 1px inset #283618;
+    padding: 50px 100px;
+}
+
+h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 22px;
+    color: #283618;
+    text-align: center;
+}
+
+.email-add {
+    font-family: "Montserrat", sans-serif;
+    color: #345223;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connect {
+    font-family: "Montserrat", sans-serif;
+    color: #345223;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* About Page styles */
 .about {
