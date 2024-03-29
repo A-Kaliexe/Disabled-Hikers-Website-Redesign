@@ -679,91 +679,114 @@ a img {
 
 /* About Page styles */
 .about {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
     h1 {
         text-align: center;
         background-color: #fabd48;
         border-radius: 18%;
         display: inline;
-        padding: 0 10px;
-        font-family:
+        font-size: 70pt;
     }
-
-
+    h2{
+        font-size: 55pt;
+        color: #D77028;
+        padding: 30px;
+        text-align: center;
+    }
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 17pt;
+    }
+    p{
+        font-size: 16pt;
+        color: #345223;
+        font-weight: bold;
+        padding: 25px;
+    }
+    
+    
     .top_quote {
         text-align: center;
         font-size: 14pt;
         padding-block-start: .5cm;
-    }
+        padding-bottom: 50px;
+        background:  #345223;
+        padding-top: 50px;
 
-    .background_header {
+        
+    }
+    .background_header{
         justify-content: center;
         position: relative;
         width: 100%;
+        color: white;
     }
-
-    img {
+    img{
         width: 100%;
         height: auto;
-
     }
-
+    
     .story {
         text-align: center;
-        padding-block-end: 1cm;
+        padding-bottom: 50px;
         padding-left: 3cm;
         padding-right: 3cm;
+        background: #FEFAE0;
+        padding-top: 50px;
     }
-
-    .people {
+    .people{
         text-align: center;
-        padding-bottom: cm;
+        
     }
-
     .team_container {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto; 
         grid-template-columns: auto auto;
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: center;
         text-align: center;
-        padding-block-end: 1cm;
         padding-left: 1cm;
-        padding-right: 1cm;
+        padding-right:1cm;
+        padding-bottom: 50px;
+        
+        gap: 100px;
+
+        
     }
 
-    .board_container {
+    .board_container{
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        grid-template-rows:auto auto;
+        justify-content: center;
         align-content: center;
-        text-align: center;
-        padding-block-end: 1cm;
-        padding-left: 3cm;
-        padding-right: 3cm;
-        background-color:
-
+        text-align: center; 
+        column-gap: 100px;
+        row-gap: 25px;
+        background: #88bf69;
+        padding: 50px;
     }
-
-    .impact_container {
+    .board-title{
+        background: #88bf69;
+    }
+    .color-heading{
+        background: #FEFAE0;
+        padding-top: 20px;
+    }
+    .impact_container{
         display: grid;
         grid-template-rows: 100px;
-        grid-template-columns: 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px ;
         justify-content: space-evenly;
         align-content: center;
         text-align: center;
         font-size: 12pt;
-        padding-block-end: 2cm;
+        padding: 50px;
         padding-left: 3cm;
-        padding-right: 3cm;
+        padding-right:3cm;
+        background: #FEFAE0;
     }
-
-    .button {
+    .button{
         background-color: #D77028;
         border: none;
         color: white;
@@ -774,204 +797,74 @@ a img {
         font-size: 16px;
         border-radius: 8px;
         font-family: 'Montserrat', sans-serif;
-    }
-
-    .footer {
+        }
+    .footer{
         text-align: center;
-        font-size: 12pt;
-        background: #fabd48;
-        font-weight: bold;
+        font-size: 16pt;
+        background: #345223;
+        font-weight: none;
+        padding: 30px;
+        color: white; 
     }
-
-    .support {
-        text-align: center;
+    .footer-text{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
     }
-
-    p.footer {
-        text-align: left;
-        color: black;
+    .support-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        place-items: center;
+        gap: 10px;
+        padding-bottom: 50px;
     }
-
-    .image {
+    .support-item-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: auto;
+        height:auto;
+    }
+    .support-item-2{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        width: 500px;
+        height: 300px;
+    
+    }
+    .image2{
         width: 100%;
         height: auto;
+        border-radius: 50%;
     }
-
-    .text {
+    .text{
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 25%;
-        transform: translate(-50%, -50%);
+        transorm: translate(-50%, -50%);
         z-index: 1;
         background: none;
     }
-}
-
-body.community {
-
-    /* Banner */
-    .banner {
-        background-image: url("images/banner-design.jpg");
-        background-position: center;
-        background-size: cover;
-        color: #FEFAE0;
-        padding: 80px 0;
-        text-align: center;
-    }
-
-    /* Main Content - Two Column Layout */
-    .main-content {
-        padding: 40px 0;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .left-layout,
-    .right-layout {
-        max-width: 900px;
-        height: auto;
-    }
-
-    /* Community Logo */
-    .logo-img {
-        max-width: 20px;
-        max-height: 20%;
-    }
-
-    /* Community Icon Images */
-    .feature img {
-        width: 50px;
-        height: auto;
-    }
-
-    /* Community Sections */
-    .story,
-    .insta-widget,
-    .upcoming-events,
-    .social-media,
-    .feature {
-        background-color: #FEFAE0;
-        padding: 30px;
-        border-radius: 10px;
-        margin-top: 20px;
-        margin-left: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.185);
-    }
-
-    .story h2,
-    .feature h2 {
-        font-size: 60px;
-        color: #283618;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        color: #D77028;
-        font-size: 50px;
-    }
-
-    .story {
-        margin-left: 10px;
-    }
-
-    .story p,
-    .feature p {
-        margin: 20px 40px;
-    }
-
-    /*Social Media*/
-    span,
-    a {
-        color: #345223;
-        font-weight: bold;
-        font-size: large;
-    }
-
-
-
-    /* Feature Styles */
-    .feature-wrapper {
+    .nav2{
         display: flex;
-        justify-content: space-around;
-        margin: 30px;
-        align-items: center;
-    }
-
-    .feature {
+        justify-content: center;
         text-align: center;
-        width: 30%;
-        background-color: #DDA15E;
+        font-size: 17pt;
     }
-
-    .feature img {
-        width: 100%;
-        max-width: 100px;
+    .p-text{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        padding-right: 40px;
     }
-
-    /* Buttons */
-    .cta-btn {
-        margin: 40px;
-        padding: 10px 25px;
-        background-color: #DDA15E;
-        color: #232323;
-        border: none;
-        border-radius: 35px;
-        cursor: pointer;
+    
+    .p-text:hover{
+        color: white;
+        font-weight: bold;
+    }  
     }
-
-    .cta-btn:hover {
-        background-color: #D77028;
-    }
-
-    /* Responsive Layout */
-    @media screen and (max-width: 768px) {
-        .container {
-            grid-template-columns: auto, auto;
-        }
-
-        .news-donate {
-            flex-direction: column;
-        }
-    }
-
-    /*Upcoming Events*/
-    h3 {
-        color: #345223;
-        letter-spacing: 1.5px;
-        font-size: 25px;
-        margin-top: 60px;
-    }
-
-    /* Swiper for Upcoming Events */
-    .swiper-container {
-        overflow-x: hidden;
-        /* Prevent horizontal scrolling */
-    }
-
-    .swiper-slide {
-        /* Ensure content does not overflow */
-        max-width: 100%;
-        /* Set maximum width of slides */
-        overflow: hidden;
-        /* Hide content that overflows */
-    }
-
-    .swiper-slide img {
-        max-width: 100%;
-        /* Ensure images fit within slide */
-        height: auto;
-        /* Maintain aspect ratio */
-    }
-}
-
-/* Trails Page styles */
-.trails {
-    /* Add styles specific to the trails page */
-}
-
 
 /*Media Queries*/
