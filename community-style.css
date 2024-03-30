@@ -246,6 +246,7 @@ p {
     justify-content: space-between;
 }
 
+
 .newsletter,
 .support-us {
     width: 45%;
@@ -278,139 +279,157 @@ p {
     background-color: #D77028;
 }
 
-body.community {
-
-    /* Banner */
-    .banner {
-        background-image: url("images/banner-design.jpg");
-        background-position: center;
-        background-size: cover;
-        color: #FEFAE0;
-        padding: 80px 0;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 82px;
-        letter-spacing: 1.5px;
-    }
-
-    /* Main Content - Two Column Layout */
-    .main-content {
-        padding: 40px 0;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .left-layout,
-    .right-layout {
-        max-width: 900px;
-        height: auto;
-    }
-
-    /* Community Logo */
-    .logo-img {
-        max-width: 20px;
-        max-height: 20%;
-    }
-
-    /* Community Icon Images */
-    .feature img {
-        width: 50px;
-        height: auto;
-    }
-
-    /* Community Sections */
-    .story,
-    .insta-widget,
-    .upcoming-events,
-    .social-media,
-    .feature,
-    .Background__Overlay-sc-4lq1r6-2 djWGwD {
-        background-color: #FEFAE0;
-        padding: 30px;
-        border-radius: 10px;
-        margin-top: 20px;
-        margin-left: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.185);
-    }
-
-    .story h2,
-    .feature h2 {
-        font-size: 60px;
-        color: #283618;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        color: #D77028;
-        font-size: 50px;
-    }
-
-    .story {
-        margin-left: 10px;
-    }
-
-    .story p,
-    .feature p {
-        margin: 20px 40px;
-    }
-
-    /*Social Media*/
-    span,
-    a {
-        color: #345223;
-        font-weight: bold;
-        font-size: large;
-    }
 
 
-
-    /* Feature Styles */
-    .feature-wrapper {
-        display: flex;
-        justify-content: space-around;
-        margin: 30px;
-        align-items: center;
-    }
-
-    .feature {
-        text-align: center;
-        width: 30%;
-        background-color: #DDA15E;
-    }
-
-    .feature img {
-        width: 100%;
-        max-width: 100px;
-    }
-
-    /* Buttons */
-    .cta-btn {
-        margin: 40px;
-        padding: 10px 25px;
-        background-color: #DDA15E;
-        color: #232323;
-        border: none;
-        border-radius: 35px;
-        cursor: pointer;
-    }
-
-    .cta-btn:hover {
-        background-color: #D77028;
-    }
-
-    /* Responsive Layout */
-
-
-    .news-donate {
-        flex-direction: column;
-    }
+/* Banner */
+.banner {
+    background-image: url("images/banner-design.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #FEFAE0;
+    padding: 80px 0;
+    text-align: center;
 }
+
+h1 {
+    font-size: 82px;
+    letter-spacing: 1.5px;
+}
+
+/* Main Content - Two Column Layout */
+.main-content {
+    padding: 40px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.left-layout,
+.right-layout {
+    max-width: 900px;
+    height: auto;
+}
+
+/* Community Logo */
+.logo-img {
+    max-width: 20px;
+    max-height: 20%;
+}
+
+/* Community Icon Images */
+.feature img {
+    width: 50px;
+    height: auto;
+}
+
+/* Community Sections */
+.story,
+.insta-widget,
+.upcoming-events,
+.social-media,
+.feature,
+.Background__Overlay-sc-4lq1r6-2 djWGwD {
+    background-color: #FEFAE0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.185);
+}
+
+.story h2,
+.feature h2 {
+    font-size: 60px;
+    color: #283618;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #D77028;
+    font-size: 50px;
+}
+
+.story {
+    margin-left: 10px;
+}
+
+.story p,
+.feature p {
+    margin: 20px 40px;
+}
+
+/*Social Media*/
+span,
+a {
+    color: #345223;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+/* Feature Styles */
+.feature-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    align-items: center;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    background-color: #DDA15E;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Buttons */
+.cta-btn {
+    margin: 40px;
+    padding: 10px 25px;
+    background-color: #DDA15E;
+    color: #232323;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #D77028;
+}
+
+.footer {
+    text-align: center;
+    font-size: 16pt;
+    background: #345223;
+    font-weight: none;
+    padding: 30px;
+    color: white;
+}
+
+.footer-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 17pt;
+}
+
+
+
+
 
 
 
@@ -476,62 +495,67 @@ body.community {
         margin: 10px 20px;
     }
 
-    /* Adjust input field sizes */
-    .newsletter input[type="email"] {
-        width: 70%;
-        padding: 10px;
+    @media screen and (min-width: 768px) {
+        .news-donate {
+            flex-direction: row;
+        }
+
+        /* Adjust input field sizes */
+        .newsletter input[type="email"] {
+            width: 70%;
+            padding: 10px;
+        }
+
+        /* Adjust spacing between form elements */
+        .newsletter input[type="email"],
+        .subscribe-btn {
+            margin-bottom: 10px;
+        }
+
+
+
+        /* Adjust grid-based layout */
+        .feature-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Adjust footer layout */
+        footer {
+            padding: 20px;
+        }
+
+        /* Adjust background images or patterns */
+        .banner {
+            background-size: contain;
+        }
+
+        /* Adjust borders */
+        .story,
+        .insta-widget,
+        .upcoming-events,
+        .social-media,
+        .feature,
+        .slideshow-container {
+            border-radius: 5px;
+        }
     }
 
-    /* Adjust spacing between form elements */
-    .newsletter input[type="email"],
-    .subscribe-btn {
-        margin-bottom: 10px;
+    .fixed-nav-bar .logo {
+        font-size: 24px;
     }
 
-
-
-    /* Adjust grid-based layout */
-    .feature-wrapper {
-        flex-direction: column;
-        align-items: center;
+    .menu-button-label {
+        display: block;
     }
 
-    /* Adjust footer layout */
-    footer {
-        padding: 20px;
+    .nav-menu {
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.753);
     }
 
-    /* Adjust background images or patterns */
-    .banner {
-        background-size: contain;
+    .drop-down-container {
+        width: 100%;
     }
-
-    /* Adjust borders */
-    .story,
-    .insta-widget,
-    .upcoming-events,
-    .social-media,
-    .feature,
-    .slideshow-container {
-        border-radius: 5px;
-    }
-}
-
-.fixed-nav-bar .logo {
-    font-size: 24px;
-}
-
-.menu-button-label {
-    display: block;
-}
-
-.nav-menu {
-    top: 60px;
-    right: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.753);
-}
-
-.drop-down-container {
-    width: 100%;
-}
