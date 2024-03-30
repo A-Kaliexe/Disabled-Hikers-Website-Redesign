@@ -1,0 +1,401 @@
+/*Reset Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Global Styles*/
+/* Add styles specific throughout entire website */
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+html {
+    height: 100%
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Nav Bar Styles */
+/* Navigation Bar */
+/* Navigation Bar */
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #FDFDFD;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.content {
+    padding-top: 100px;
+}
+.fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    /*text-transform: uppercase;*/
+    color: #333;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.community.scrolled {
+    min-height: 60px;
+    background-color: #FEFAE0;
+    /* Ensure background color remains opaque when scrolled (text)*/
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+#menuButton {
+    display: none;
+}
+.menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+}
+.menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+.menu-button-label .white-bar:nth-child(1) {
+    top: 20%;
+}
+.menu-button-label .white-bar:nth-child(2) {
+    top: 50%;
+}
+.menu-button-label .white-bar:nth-child(3) {
+    top: 80%;
+}
+
+  /* Dropdown Menu */
+.nav-menu {
+    display: none;
+    /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    background-color: rgba(215,112,40, 0.7);
+    transition: 0.35s ease, width 0.35s ease;
+    z-index: 90;
+    overflow-y: auto;
+    font-family: 'Bebas Neue', sans-serif;}.nav-menu.dropped {
+    display: block;
+    /* Show the dropdown menu when dropped class is added */
+    height: 100vh;
+    padding: 50px 0;
+    transition: height 0.35s ease;
+    font-size: 16pt;
+    top: 100px;
+}  
+/* Adjustments for Drop-down Menu Items */
+.drop-down-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.drop-down-container .drop-down-item {
+    display: block;
+    padding: 15px 0;
+    color: #ccc;
+    font-size: 60px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.drop-down-container .drop-down-item:hover {
+    color: #fff;
+}
+.fixed-nav-bar .subheading {
+    margin-top: 70px;
+}
+.footer{
+        text-align: center;
+        font-size: 16pt;
+        background: #345223;
+        font-weight: none;
+        padding: 30px;
+        color: white;
+}
+.footer-text{
+        margin-top: 10px;
+        margin-bottom: 10px;    
+}
+.nav2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 17pt;
+}
+.p-text{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        padding-right: 40px;
+}
+.p-text:hover{
+        color: white;
+        font-weight: bold;
+} 
+
+
+
+/* Form Page Styles */
+.form-body {
+    background-image: url(https://static.wixstatic.com/media/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg/v1/fill/w_1322,h_1443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-container {
+    height: 900px;
+    width: 1000px;
+    background-color: #DDA15E;
+    top: 50%;
+    left: 50%;
+    margin-top: 140px;
+    margin-left: 150px;
+    border-radius: 50px;
+}
+
+.contact-us {
+    color: #345223;
+    margin-left: 380px;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 50px;
+}
+
+.contact-para {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 350px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.inline-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.form-group label {
+    text-align: left;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    color:#000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group input {
+    height: 30px;
+    width: 78.5%;
+    margin-left: 105px;
+}
+
+#message {
+    width: 78%;
+    margin-left: 105px;
+}
+
+.form-names {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 75px;
+}
+
+.form-names label {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding-right: 10px;
+    font-family: "Montserrat", sans-serif;
+    color:#000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-names input {
+    height: 30px;
+    width: 240px;
+    padding: 10px;
+}
+
+.form-email {
+    display:flex;
+    flex-direction: row;
+    margin: 10px 75px;
+}
+
+.form-email label {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding-right: 5px;
+    font-family: "Montserrat", sans-serif;
+    color:#000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-email input {
+    height: 30px;
+    width: 73.5%;
+}
+
+.submit {
+    padding: 30px 60px;
+    margin: 100px 400px;
+    background-color: #FEFAE0;
+    color: #283618;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.submit:hover {
+    background-color: #D77028;
+    color: #FEFAE0;
+}
+
+.speak-header {
+    font-family: "Bebas Neue", sans-serif;
+    color:#345223;
+    margin-left: 105px;
+    font-size: 30px;
+}
+
+.speaking-req {
+    margin-left: 105px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 50px;
+    margin-right: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 500px 500px 200px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+    margin-top: 100px;
+    height: 200px;
+    background-color: #FEFAE0;
+}
+
+.item2,
+.item3 {
+    border: 1px inset #283618;
+    padding: 50px 100px;
+}
+
+h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 22px;
+    color: #283618;
+    text-align: center;
+}
+
+.email-add {
+    font-family: "Montserrat", sans-serif;
+    color: #345223;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connect {
+    font-family: "Montserrat", sans-serif;
+    color: #345223;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+/*Media Queries*/
+/* Small devices (portrait phones) */
+@media only screen and (max-width: 600px) {
+   
+}
+
+/* Medium devices (landscape phones, tablets) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 993px) {
+
+}
+
+@media only screen and (orientation: portrait) {
+
+}
+@media only screen and (orientation: landscape) {
+    
+}
+
+
