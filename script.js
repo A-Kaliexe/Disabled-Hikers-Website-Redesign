@@ -30,36 +30,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-/*/swiper slider
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".swiper-container", {
-    // Optional parameters
-    direction: "vertical",
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-  // Add event listener for slide change
-  swiper.on("slideChange", function () {
-    console.log("Slide changed");
-  });
-});*/
-//slider for community
-let currentIndex=0;
-cont slides = document.querySelesctorAll('.slide')
-function
