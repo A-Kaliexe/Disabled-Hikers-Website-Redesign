@@ -629,6 +629,11 @@ body.community {
         text-align: center;
     }
 
+    h1 {
+        font-size: 82px;
+        letter-spacing: 1.5px;
+    }
+
     /* Main Content - Two Column Layout */
     .main-content {
         padding: 40px 0;
@@ -663,7 +668,8 @@ body.community {
     .insta-widget,
     .upcoming-events,
     .social-media,
-    .feature {
+    .feature,
+    .swiper-slide {
         background-color: #FEFAE0;
         padding: 30px;
         border-radius: 10px;
@@ -748,35 +754,49 @@ body.community {
         }
     }
 
-    /*Upcoming Events*/
-    h3 {
-        color: #345223;
-        letter-spacing: 1.5px;
-        font-size: 25px;
-        margin-top: 60px;
+
+    /* .swiper-img {
+        max-width: 300px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
     }
 
-    /* Swiper for Upcoming Events */
     .swiper-container {
-        overflow-x: hidden;
-        /* Prevent horizontal scrolling */
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        width: 100%;
     }
 
     .swiper-slide {
-        /* Ensure content does not overflow */
-        max-width: 100%;
-        /* Set maximum width of slides */
-        overflow: hidden;
-        /* Hide content that overflows */
+        width: 100%;
+        z-index: 5;
     }
 
-    .swiper-slide img {
-        max-width: 100%;
-        /* Ensure images fit within slide */
-        height: auto;
-        /* Maintain aspect ratio */
-    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        /*transform: translateY(-50%);*/
+    z-index: 10;
+    color: #D77028;
 }
+
+.swiper-button-next {
+    right: 10px;
+    color: #D77028;
+}
+
+.swiper-button-prev {
+    left: 10px;
+    color: #D77028;
+}
+
+*/
+}
+
+
 
 /* Trails Page styles */
 .trails {
