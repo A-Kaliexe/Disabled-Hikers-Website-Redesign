@@ -1,14 +1,14 @@
 /*Reset Styles*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*Global Styles*/
 /* Add styles specific throughout entire website */
 p {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Headings */
@@ -18,154 +18,20 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
 }
 
 nav ul li a {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
-
-
-
-/* Footer */
-footer p {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*Nav Bar*/
-.fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.60);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content {
-    padding-top: 100px;
-}
-
-.fixed-nav-bar .logo {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-transform: uppercase;
-    color: #333;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.fixed-nav-bar.scrolled {
-    min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled */
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
-}
-
-#menuButton {
-    display: none;
-}
-
-.menu-button-label {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 100;
-}
-
-.menu-button-label .white-bar {
-    position: absolute;
-    height: 2px;
-    width: 66%;
-    background-color: #ccc;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
-}
-
-.menu-button-label .white-bar:nth-child(1) {
-    top: 20%;
-}
-
-.menu-button-label .white-bar:nth-child(2) {
-    top: 50%;
-}
-
-.menu-button-label .white-bar:nth-child(3) {
-    top: 80%;
-}
-
-
-/* Dropdown Menu */
-.nav-menu {
-    display: none;
-    /* Hide the dropdown menu by default */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.753);
-    transition: 0.35s ease, width 0.35s ease;
-    z-index: 80;
-    overflow-y: auto;
-}
-
-/*Men when Dropped*/
-.nav-menu.dropped {
-    display: block;
-    /* Show the dropdown menu when dropped class is added */
-    height: 35vh;
-    padding: 5px 0;
-    transition: height 0.45s ease;
-}
-
-/* Adjustments for Drop-down Menu Items */
-.drop-down-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-.drop-down-container .drop-down-item {
-    display: block;
-    padding: 15px 0;
-    color: #D77028;
-    font-size: 20px;
-    Font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.drop-down-container .drop-down-item:hover {
-    color: #fff;
-}
-
-.fixed-nav-bar .subheading {
-    margin-top: 70px;
-}
 
 @media screen and (max-width: 768px) {
-    .nav-menu {
-        width: 100%;
-    }
+  .nav-menu {
+      width: 100%;
+  }
 }
 
 /*End of Global Styles*/
@@ -173,209 +39,209 @@ footer p {
 
 /* Index/Landing Page styles */
 .index {
-    /* Add styles specific to the index page */
-    background-color: #FEFAE0;
-      
-    /* Index top image - START */
+  /* Add styles specific to the index page */
+  background-color: #FEFAE0;
     
-    .container {
-    position: relative;
-    margin-top: px;
-    width: 100%;
-    height: 100vh;
+  /* Index top image - START */
   
+  .container {
+  position: relative;
+  margin-top: px;
+  width: 100%;
+  height: 100vh;
+
+}
+
+ .container > img {
+  
+  width: 100%;
+  height: 85vh;
+  left: 0;
+  object-fit: cover;
+}
+  
+/* OVERLAY - TBD 
+  .overlay {
+  position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+  
+  .container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+  
+  */
+  
+.title,
+  #subtitle {
+  letter-spacing: 5px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 10vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20vh;
+  font-weight: 750;
+  background-color: #D7702898;
+  padding: 1vh;
+  color: #FFFFFF;
+  z-index: 1;
+  transition: top .5s ease;
+}
+  
+  #subtitle {
+    top: 40vh;
+    text-transform: capitalize;
+    background-color: transparent;
+    font-size: 6vh;
+    letter-spacing: 2px;
+    
+  }
+ 
+.container:hover .title {
+  top: 3vh;
+}
+  .container:hover #subtitle {
+    top: 36vh;
   }
   
-   .container > img {
-    
-    width: 100%;
-    height: 85vh;
-    left: 0;
-    object-fit: cover;
+.button {
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 60vh;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8vh;
+  font-weight: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
   }
+
+.button a {
+  width: 275px;
+  padding: 4vh 12vh;
+  text-align: center;
+  color: white;
+  border-radius: 80px;
+  background-color: #345223;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
+
+  /* Index top image - END */
     
-  /* OVERLAY - TBD 
-    .overlay {
-    position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.5s ease;
-  }
-    
-    .container:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, .3);
-  }
-    
-    */
-    
-  .title,
-    #subtitle {
+  h2 {
+    font-size: 75px;
     letter-spacing: 5px;
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 10vh;
+    color: #345223;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20vh;
-    font-weight: 750;
-    background-color: #D7702898;
-    padding: 1vh;
+  }
+  
+  p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0px 15%;
+  }
+  
+   .secondary {
+    background-color: #DDA15E;
+    padding: 40px 0px;
+    margin: 60px 0px;
+  }
+  
+  .secondary h2 {
     color: #FFFFFF;
-    z-index: 1;
-    transition: top .5s ease;
   }
+  
+ /* BORDER STILL a WIP 
+  
+  #who {
+    outline: 2px solid #DDA15E;
+    z-index: 1;
+  }
+  
+  */
+  
+  /* What We Do/Work Images - START */
     
-    #subtitle {
-      top: 40vh;
-      text-transform: capitalize;
-      background-color: transparent;
-      font-size: 6vh;
-      letter-spacing: 2px;
-      
-    }
+  .work {
+  display: flex;
+  width: 100%;
+  padding: 20px 0px 0px;
+  box-sizing: content-box;
+  height: 75vh;
+
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .7s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100%);
+  object-fit: cover; 
+  transition: .7s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 7vh;
+  line-height: 2.3;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
    
-  .container:hover .title {
-    top: 3vh;
-  }
-    .container:hover #subtitle {
-      top: 36vh;
-    }
-    
-  .button {
-    position: absolute;
-    width: 100%;
-    left:0;
-    top: 60vh;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 8vh;
-    font-weight: 20px;
+  /* What We Do/Work Images - END */
+  .guidebook,
+  .secondary {
     text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-    }
-  
-  .button a {
-    width: 275px;
-    padding: 4vh 12vh;
-    text-align: center;
-    color: white;
-    border-radius: 80px;
-    background-color: #345223;
-    z-index: 1;
   }
   
-  .container:hover .button {
-    opacity: 1;
+  #guidebook {
+    height: 500px;
   }
   
-    /* Index top image - END */
-      
-    h2 {
-      font-size: 75px;
-      letter-spacing: 5px;
-      color: #345223;
-      text-align: center;
-    }
-    
-    p {
-      font-size: 25px;
-      text-align: center;
-      line-height: 1.5;
-      padding: 0px 15%;
-    }
-    
-     .secondary {
-      background-color: #DDA15E;
-      padding: 40px 0px;
-      margin: 60px 0px;
-    }
-    
-    .secondary h2 {
-      color: #FFFFFF;
-    }
-    
-   /* BORDER STILL a WIP 
-    
-    #who {
-      outline: 2px solid #DDA15E;
-      z-index: 1;
-    }
-    
-    */
-    
-    /* What We Do/Work Images - START */
-      
-    .work {
-    display: flex;
-    width: 100%;
-    padding: 20px 0px 0px;
-    box-sizing: content-box;
-    height: 75vh;
-  
   }
-  
-  .box {
-    flex: 1;
-    overflow: hidden;
-    transition: .7s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
-    line-height: 0;
-  }
-  
-  .box > img {
-    width: 200%;
-    height: calc(100%);
-    object-fit: cover; 
-    transition: .7s;
-  }
-  
-  .box > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 7vh;
-    line-height: 2.3;
-  }
-  
-  .box:hover { flex: 1 1 50%; }
-  .box:hover > img {
-    width: 100%;
-    height: 100%;
-  }
-     
-    /* What We Do/Work Images - END */
-    .guidebook,
-    .secondary {
-      text-align: center;
-    }
-    
-    #guidebook {
-      height: 500px;
-    }
-    
-    }
-  /* Index/Landing Page styles - END */
+/* Index/Landing Page styles - END */
 
 
 
 
 /* Form Page styles */
 .form {
-    /* Add styles specific to the form page */
+  /* Add styles specific to the form page */
 }
 
 
 /* About Page styles */
 .about {
-    /* Add styles specific to the about page */
+  /* Add styles specific to the about page */
 }
 
 
@@ -384,30 +250,183 @@ footer p {
 /* Targeting Only the Community Page */
 
 .community {
-    /* Styles for the header h1 on the community page */
+  /* Styles for the header h1 on the community page */
 }
 
 .community main.grid {
-    /* Styles for the main grid on the community page */
+  /* Styles for the main grid on the community page */
 }
 
 .community .sidebar-left {
-    /* Styles for the left sidebar on the community page */
+  /* Styles for the left sidebar on the community page */
 }
 
 .community .sidebar-right {
-    /* Styles for the right sidebar on the community page */
+  /* Styles for the right sidebar on the community page */
 }
 
 .community .newsletter {
-    /* Styles for the newsletter section on the community page */
+  /* Styles for the newsletter section on the community page */
 }
 
 
 /* Trails Page styles */
 .trails {
-    /* Add styles specific to the trails page */
+  /* Add styles specific to the trails page */
 }
 
 
 /*Media Queries*/
+
+
+
+/* NAV BAR & FOOTER */
+
+/* Navigation Bar */
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  /* Change background color to opaque */
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  backface-visibility: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+  padding-top: 100px;
+}
+
+.fixed-nav-bar .logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  /*text-transform: uppercase;*/
+  color: #333;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.community.scrolled {
+  min-height: 60px;
+  background-color: #fefae0;
+  /* Ensure background color remains opaque when scrolled (text)*/
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menuButton {
+  display: none;
+}
+
+.menu-button-label {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu-button-label .white-bar {
+  position: absolute;
+  height: 2px;
+  width: 66%;
+  background-color: #ccc;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+.menu-button-label .white-bar:nth-child(1) {
+  top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+  top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+  top: 80%;
+}
+
+/**/
+/* Dropdown Menu */
+.nav-menu {
+  display: none;
+  /* Hide the dropdown menu by default */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  background-color: rgba(215,112,40, 0.7);
+  transition: 0.35s ease, width 0.35s ease;
+  z-index: 90;
+  overflow-y: auto;
+  font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.nav-menu.dropped {
+  display: block;
+  /* Show the dropdown menu when dropped class is added */
+  height: 100vh;
+  padding: 50px 0;
+  transition: height 0.35s ease;
+  font-size: 16pt;
+  top: 100px;
+}
+
+/* Adjustments for Drop-down Menu Items */
+.drop-down-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.drop-down-container .drop-down-item {
+  display: block;
+  padding: 15px 0;
+  color: #ccc;
+  font-size: 60px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.drop-down-container .drop-down-item:hover {
+  color: #fff;
+}
+
+.fixed-nav-bar .subheading {
+  margin-top: 70px;
+}
+
+.footer{
+      text-align: center;
+      font-size: 16pt;
+      background: #345223;
+      font-weight: none;
+      padding: 30px;
+      color: white; 
+  }
+  .footer-text{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
+  }
+.nav2{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 17pt;
+  }
