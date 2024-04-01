@@ -31,3 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Add event listener for menu button click
+  var menuButton = document.getElementById("menuButton");
+  var navMenu = document.getElementById("menu");
+
+  menuButton.addEventListener("click", function () {
+    navMenu.classList.toggle("dropped");
+  });
+});

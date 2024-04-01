@@ -36,6 +36,19 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #283618;
     background-color: #fefae0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 h1,
@@ -200,7 +213,7 @@ p {
 }
 
 /* Adjustments for Drop-down Menu Items */
-* Your existing CSS styles */
+
 
 /* Add hover effect for dropdown items */
 .drop-down-container .drop-down-item:hover {
@@ -361,7 +374,7 @@ h2 {
     margin: 20px 40px;
 }
 
-/*Social Media*/
+/*Social Media Section*/
 span,
 a {
     color: #345223;
@@ -369,6 +382,18 @@ a {
     font-size: large;
 }
 
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #283618;
+}
+
+a:focus {
+    outline: 2px solid #283618;
+}
 
 
 /* Feature Styles */
@@ -383,6 +408,13 @@ a {
     text-align: center;
     width: 30%;
     background-color: #DDA15E;
+    transition: background-color 0.3s ease;
+}
+
+.feature:hover {
+    background-color: #fefae0;
+    color: #D77028;
+    box-shadow: 0 4px 10px rgba(238, 109, 4, 0.815);
 }
 
 .feature img {
@@ -399,32 +431,61 @@ a {
     border: none;
     border-radius: 35px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-btn:hover {
     background-color: #D77028;
+
 }
 
-.footer {
+button:focus {
+    outline: 2px solid #D77028;
+}
+
+/*Footer*/
+footer {
     text-align: center;
-    font-size: 16pt;
-    background: #345223;
-    font-weight: none;
+    background-color: #345223;
     padding: 30px;
-    color: white;
 }
 
 .footer-text {
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
-.nav2 {
+.footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer a {
+    color: #DDA15E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FEFAE0;
+}
+
+.nav-2 {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 17pt;
+    margin-top: 20px;
+}
+
+.p-text {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #DDA15E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.p-text:hover {
+    color: #FEFAE0;
 }
 
 
