@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
+//nav bar
 document.addEventListener("DOMContentLoaded", function () {
   // Add event listener for menu button click
   var menuButton = document.getElementById("menuButton");
