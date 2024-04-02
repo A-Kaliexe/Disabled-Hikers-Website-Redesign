@@ -36,6 +36,19 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #283618;
     background-color: #fefae0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 h1,
@@ -118,23 +131,78 @@ p {
     padding-top: 100px;
 }
 
+/*Reset Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Global Styles*/
+/* Add styles specific throughout entire website */
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar */
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+    padding-top: 100px;
+}
+
 .fixed-nav-bar .logo {
     position: absolute;
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #333;
     font-size: 28px;
     font-weight: 300;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.fixed-nav-bar.scrolled {
+.community.scrolled {
     min-height: 60px;
-    background-color: #345223;
-    /* Ensure background color remains opaque when scrolled */
+    background-color: #fefae0;
+    /* Ensure background color remains opaque when scrolled (text)*/
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -150,7 +218,7 @@ p {
     right: 25px;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 100;
+    z-index: 101;
 }
 
 .menu-button-label .white-bar {
@@ -175,7 +243,7 @@ p {
     top: 80%;
 }
 
-
+/**/
 /* Dropdown Menu */
 .nav-menu {
     display: none;
@@ -184,53 +252,50 @@ p {
     top: 60px;
     right: 0;
     width: 300px;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(215, 112, 40, 0.7);
     transition: 0.35s ease, width 0.35s ease;
-    z-index: 80;
+    z-index: 90;
     overflow-y: auto;
+    font-family: 'Bebas Neue', sans-serif;
+
 }
 
-/*Men when Dropped*/
 .nav-menu.dropped {
     display: block;
     /* Show the dropdown menu when dropped class is added */
-    height: 35vh;
-    padding: 5px 0;
-    transition: height 0.45s ease;
+    height: 100vh;
+    padding: 50px 0;
+    transition: height 0.35s ease;
+    font-size: 16pt;
+    top: 100px;
 }
 
 /* Adjustments for Drop-down Menu Items */
-* Your existing CSS styles */
-
-/* Add hover effect for dropdown items */
-.drop-down-container .drop-down-item:hover {
-    color: #fff;
-    background-color: #345223;
-    /* Background color when hovered */
+.drop-down-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
 
-/* Adjust dropdown item styles */
 .drop-down-container .drop-down-item {
     display: block;
     padding: 15px 0;
-    color: #D77028;
-    font-size: 20px;
-    font-weight: bold;
+    color: #ccc;
+    font-size: 60px;
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    /* Added transition for smooth hover effect */
+    transition: color 0.3s ease;
 }
 
-/* Updated responsive styles */
+.drop-down-container .drop-down-item:hover {
+    color: #fff;
+}
+
+.fixed-nav-bar .subheading {
+    margin-top: 70px;
+}
+
 @media screen and (max-width: 768px) {
     .nav-menu {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.753);
-        /* Ensure background color remains visible */
-    }
-
-    /* Adjust dropdown container width */
-    .drop-down-container {
         width: 100%;
     }
 }
@@ -361,7 +426,7 @@ h2 {
     margin: 20px 40px;
 }
 
-/*Social Media*/
+/*Social Media Section*/
 span,
 a {
     color: #345223;
@@ -369,6 +434,18 @@ a {
     font-size: large;
 }
 
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #283618;
+}
+
+a:focus {
+    outline: 2px solid #283618;
+}
 
 
 /* Feature Styles */
@@ -383,6 +460,13 @@ a {
     text-align: center;
     width: 30%;
     background-color: #DDA15E;
+    transition: background-color 0.3s ease;
+}
+
+.feature:hover {
+    background-color: #fefae0;
+    color: #D77028;
+    box-shadow: 0 4px 10px rgba(238, 109, 4, 0.815);
 }
 
 .feature img {
@@ -399,32 +483,61 @@ a {
     border: none;
     border-radius: 35px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-btn:hover {
     background-color: #D77028;
+
 }
 
-.footer {
+button:focus {
+    outline: 2px solid #D77028;
+}
+
+/*Footer*/
+footer {
     text-align: center;
-    font-size: 16pt;
-    background: #345223;
-    font-weight: none;
+    background-color: #345223;
     padding: 30px;
-    color: white;
 }
 
 .footer-text {
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
-.nav2 {
+.footer p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer a {
+    color: #DDA15E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FEFAE0;
+}
+
+.nav-2 {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 17pt;
+    margin-top: 20px;
+}
+
+.p-text {
+    margin: 0 15px;
+    font-size: 20px;
+    color: #DDA15E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.p-text:hover {
+    color: #FEFAE0;
 }
 
 
