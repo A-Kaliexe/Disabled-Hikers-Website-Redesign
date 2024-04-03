@@ -266,11 +266,12 @@ footer p {
         text-align: center; 
         column-gap: 100px;
         row-gap: 25px;
-        background: #88bf69;
+        background: #345223;
         padding: 50px;
+        color: white;
     }
     .board-title{
-        background: #88bf69;
+        background: #345223;
     }
     .color-heading{
         background: #FEFAE0;
@@ -358,50 +359,14 @@ footer p {
         font-size: 17pt;
     }
     .p-text{
-        color: white;
+        color: #DDA15E;
         font-family: 'Montserrat', sans-serif;
         text-decoration: none;
         padding-right: 40px;
     }
     
     .p-text:hover{
-        color: white;
+        color: #DDA15E;
         font-weight: bold;
     }  
     }
-    
-
-
-
-/* Community Page styles */
-/* Add styles specific to the community page */
-/* Targeting Only the Community Page */
-
-.community  {
-    /* Styles for the header h1 on the community page */
-}
-
-.community main.grid {
-    /* Styles for the main grid on the community page */
-}
-
-.community .sidebar-left {
-    /* Styles for the left sidebar on the community page */
-}
-
-.community .sidebar-right {
-    /* Styles for the right sidebar on the community page */
-}
-
-.community .newsletter {
-    /* Styles for the newsletter section on the community page */
-}
-
-
-/* Trails Page styles */
-.trails {
-    /* Add styles specific to the trails page */
-}
-
-
-/*Media Queries*/
