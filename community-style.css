@@ -76,40 +76,228 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* NAV BAR - START */
+    
+    /* Adjust dropdown container width */
+      /*.drop-down-container {
+          width: 100%;
+      }*/
+  
+  
+  
+  
+  
+  /* Navigation Bar */
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+    padding-top: 100px;
+}
+
 .fixed-nav-bar .logo {
     position: absolute;
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+    /*text-transform: uppercase;*/
     color: #333;
     font-size: 28px;
     font-weight: 300;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Dropdown Menu */
-.nav-menu {
+.community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    /* Ensure background color remains opaque when scrolled (text)*/
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menuButton {
     display: none;
+}
+
+.menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+.menu-button-label .white-bar:nth-child(1) {
+    top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+    top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+    top: 80%;
+}
+  
+  /**/
+  
+  
+  /* Global Nav Menu */
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content {
+      padding-top: 100px;
+  }
+  
+  .fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    /*text-transform: uppercase;*/
+    color: #333;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    /* Ensure background color remains opaque when scrolled (text)*/
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+  
+  #menuButton {
+      display: none;
+  }
+  
+  .menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+  }
+  
+  .menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button-label .white-bar:nth-child(1) {
+      top: 20%;
+  }
+  
+  .menu-button-label .white-bar:nth-child(2) {
+      top: 50%;
+  }
+  
+  .menu-button-label .white-bar:nth-child(3) {
+      top: 80%;
+  }
+  
+  
+  /* Dropdown Menu */
+  .nav-menu {
+    display: none;
+    /* Hide the dropdown menu by default */
     position: absolute;
     top: 60px;
     right: 0;
     width: 300px;
-    background-color: rgba(215, 112, 40, 0.7);
+    background-color: rgba(215,112,40, 0.7);
     transition: 0.35s ease, width 0.35s ease;
     z-index: 90;
     overflow-y: auto;
     font-family: 'Bebas Neue', sans-serif;
-}
-
-.nav-menu.dropped {
+  }
+  
+  /*Men when Dropped*/
+  .nav-menu.dropped {
     display: block;
+    /* Show the dropdown menu when dropped class is added */
     height: 100vh;
     padding: 50px 0;
     transition: height 0.35s ease;
     font-size: 16pt;
     top: 100px;
+  }
+  /* Adjustments for Drop-down Menu Items */
+  .drop-down-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
+  
+  /* Add hover effect for dropdown items */
+  .drop-down-container .drop-down-item:hover {
+      color: #fff;
+      /* Background color when hovered */
+  }
+  
+  /* Adjust dropdown item styles */
+  .drop-down-container .drop-down-item {
+    display: block;
+    padding: 15px 0;
+    color: #ccc;
+    font-size: 60px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+      /* Added transition for smooth hover effect */
+  }
+  
+  /* NAV BAR - END */
 
 /* Newsletter and Donate Section */
 .news-donate {
