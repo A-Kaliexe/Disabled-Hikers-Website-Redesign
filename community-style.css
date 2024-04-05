@@ -65,13 +65,6 @@ h1 {
     font-size: 96px;
 }
 
-/* Navigation Bar */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /*border: 1px solid red;*/
-}
 
 /* Typography */
 body {
@@ -294,10 +287,31 @@ footer p {
     margin-top: 70px;
 }
 
+
 @media screen and (max-width: 768px) {
-    .nav-menu {
-        width: 100%;
-    }
+        /* Adjustments for Navigation Bar */
+        .fixed-nav-bar .logo {
+          left: 20px; /* Adjust the left position */
+          font-size: 24px; /* Reduce font size */
+        }
+      
+        .menu-button-label {
+          right: 15px; /* Adjust the right position */
+        }
+      
+        /* Adjust Dropdown Menu */
+        .nav-menu {
+          width: 100%; /* Take full width */
+          background-color: rgba(215,112,40, 0.9); /* Adjust background color */
+        }
+      
+        .nav-menu.dropped {
+          top: 60px; /* Adjust top position */
+        }
+      
+        .drop-down-container .drop-down-item {
+          font-size: 20px; /* Adjust font size */
+        }
 }
 
 /*Newsletter and Donate Section*/
