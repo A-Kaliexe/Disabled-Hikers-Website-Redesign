@@ -37,11 +37,12 @@ body .trail-guide {
     margin-top: -7px;
     text-shadow:
         3px 3px 0 #000,
-        -1px -1px 0 #000,  
+        -1px -1px 0 #000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
 }
+
 body .trail-guide .h1 {
     color: #345223;
     font-family: 'Montserrat', sans-serif;
@@ -51,6 +52,7 @@ body .trail-guide li {
     text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
 }
+
 body .trail-guide .newsletter {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -60,6 +62,7 @@ body .trail-guide .main {
     text-size-adjust: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .color-block-1 {
     background-color: #FEFAE0;
     width: 2500px;
@@ -75,6 +78,7 @@ body .trail-guide .main {
     font-family: 'Bebas Neue', sans-serif;
     padding-top: 50px;
 }
+
 #interactive {
     font-size: 80px;
     font-family: 'Bebas Neue', sans-serif;
@@ -109,6 +113,7 @@ p {
 #map {
     align-items: center;
 }
+
 .news-donate {
     background-color: #283618;
     color: #fff;
@@ -117,20 +122,24 @@ p {
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .newsletter,
 .support-us {
     width: 45%;
 }
+
 .newsletter h2,
 .support-us h2 {
     margin-bottom: 20px;
 }
+
 .newsletter input[type="email"] {
     width: 50%;
     padding: 15px;
     border-radius: 10px;
 }
-/Buttons/
+
+/*Buttons*/
 .subscribe-btn,
 .donate-btn {
     padding: 15px 25px;
@@ -140,6 +149,7 @@ p {
     border-radius: 35px;
     cursor: pointer;
 }
+
 .subscribe-btn:hover,
 .donate-btn:hover {
     background-color: #D77028;
@@ -163,8 +173,8 @@ footer p {
 
 
 
- /* Navigation Bar */
- .fixed-nav-bar {
+/* Navigation Bar */
+.fixed-nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -227,6 +237,7 @@ footer p {
     transform: translateX(-50%);
     transition: background-color 0.3s ease;
 }
+
 .menu-button-label .white-bar:nth-child(1) {
     top: 20%;
 }
@@ -238,11 +249,11 @@ footer p {
 .menu-button-label .white-bar:nth-child(3) {
     top: 80%;
 }
-  
-  
-  
-  /* Global Nav Menu */
-  .fixed-nav-bar {
+
+
+
+/* Global Nav Menu */
+.fixed-nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -255,13 +266,13 @@ footer p {
     z-index: 100;
     backface-visibility: hidden;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .content {
-      padding-top: 100px;
-  }
-  
-  .fixed-nav-bar .logo {
+}
+
+.content {
+    padding-top: 100px;
+}
+
+.fixed-nav-bar .logo {
     position: absolute;
     left: 40px;
     top: 50%;
@@ -272,19 +283,19 @@ footer p {
     cursor: pointer;
     transition: color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  .community.scrolled {
+}
+
+.community.scrolled {
     min-height: 60px;
     background-color: #fefae0;
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
-  
-  #menuButton {
-      display: none;
-  }
-  
-  .menu-button-label {
+
+#menuButton {
+    display: none;
+}
+
+.menu-button-label {
     position: absolute;
     height: 48px;
     width: 48px;
@@ -293,9 +304,9 @@ footer p {
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 101;
-  }
-  
-  .menu-button-label .white-bar {
+}
+
+.menu-button-label .white-bar {
     position: absolute;
     height: 2px;
     width: 66%;
@@ -303,38 +314,38 @@ footer p {
     left: 50%;
     transform: translateX(-50%);
     transition: background-color 0.3s ease;
-  }
-  
-  .menu-button-label .white-bar:nth-child(1) {
-      top: 20%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(2) {
-      top: 50%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(3) {
-      top: 80%;
-  }
-  
-  
-  /* Dropdown Menu */
-  .nav-menu {
+}
+
+.menu-button-label .white-bar:nth-child(1) {
+    top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+    top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+    top: 80%;
+}
+
+
+/* Dropdown Menu */
+.nav-menu {
     display: none;
     /* Hide the dropdown menu by default */
     position: absolute;
     top: 60px;
     right: 0;
     width: 300px;
-    background-color: rgba(215,112,40, 0.7);
+    background-color: rgba(215, 112, 40, 0.7);
     transition: 0.35s ease, width 0.35s ease;
     z-index: 90;
     overflow-y: auto;
     font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  /*Menu when Dropped*/
-  .nav-menu.dropped {
+}
+
+/*Menu when Dropped*/
+.nav-menu.dropped {
     display: block;
     /* Show the dropdown menu when dropped class is added */
     height: 100vh;
@@ -342,32 +353,33 @@ footer p {
     transition: height 0.35s ease;
     font-size: 16pt;
     top: 100px;
-  }
-  /* Adjustments for Drop-down Menu Items */
-  .drop-down-container {
+}
+
+/* Adjustments for Drop-down Menu Items */
+.drop-down-container {
     position: relative;
     width: 100%;
     text-align: center;
 }
-  
-  /* Add hover effect for dropdown items */
-  .drop-down-container .drop-down-item:hover {
-      color: #fff;
-      /* Background color when hovered */
-  }
-  
-  /* Adjust dropdown item styles */
-  .drop-down-container .drop-down-item {
+
+/* Add hover effect for dropdown items */
+.drop-down-container .drop-down-item:hover {
+    color: #fff;
+    /* Background color when hovered */
+}
+
+/* Adjust dropdown item styles */
+.drop-down-container .drop-down-item {
     display: block;
     padding: 15px 0;
     color: #ccc;
     font-size: 60px;
     text-decoration: none;
     transition: color 0.3s ease;
-      /* Added transition for smooth hover effect */
-  }
-  
-  /* NAV BAR - END */
+    /* Added transition for smooth hover effect */
+}
+
+/* NAV BAR - END */
 @media screen and (max-width: 768px) {
     .nav-menu {
         width: 100%;
@@ -381,7 +393,7 @@ footer p {
 }
 
 .trail-list {
-    flex: 1; 
+    flex: 1;
     margin-left: 150px;
     margin-right: -10px;
     margin-bottom: 80px;
