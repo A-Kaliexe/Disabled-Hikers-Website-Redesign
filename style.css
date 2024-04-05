@@ -24,7 +24,7 @@ body .trail-guide {
 
 
 .new-h1 {
-    background-image: url(./images/hiking-image.jpg);
+    background-image: url('./images/hiking-image.jpg');
     background-position: center;
     width: 100%;
     height: 650px;
