@@ -20,21 +20,24 @@ html {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }  
+}  
 
   // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
 .montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /* Nav Bar Styles */
-/* Navigation Bar */
-/* Navigation Bar */
+/* NAV BAR - START */
+    
+    /* Adjust dropdown container width */
+    /*.drop-down-container {  width: 100%; }*/
+ /* Navigation Bar */
 .fixed-nav-bar {
     position: fixed;
     top: 0;
@@ -43,16 +46,18 @@ html {
     min-height: 100px;
     padding: 0 25px;
     box-sizing: border-box;
-    background-color: #FDFDFD;
+    background-color: #fdfdfd;
     /* Change background color to opaque */
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
     z-index: 100;
     backface-visibility: hidden;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .content {
     padding-top: 100px;
 }
+
 .fixed-nav-bar .logo {
     position: absolute;
     left: 40px;
@@ -66,15 +71,18 @@ html {
     transition: color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
 }
+
 .community.scrolled {
     min-height: 60px;
-    background-color: #FEFAE0;
+    background-color: #fefae0;
     /* Ensure background color remains opaque when scrolled (text)*/
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
+
 #menuButton {
     display: none;
 }
+
 .menu-button-label {
     position: absolute;
     height: 48px;
@@ -85,6 +93,7 @@ html {
     cursor: pointer;
     z-index: 101;
 }
+
 .menu-button-label .white-bar {
     position: absolute;
     height: 2px;
@@ -97,11 +106,92 @@ html {
 .menu-button-label .white-bar:nth-child(1) {
     top: 20%;
 }
+
 .menu-button-label .white-bar:nth-child(2) {
     top: 50%;
 }
+
 .menu-button-label .white-bar:nth-child(3) {
     top: 80%;
+}
+
+  /* Global Nav Menu */
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+        padding-top: 100px;
+}
+
+.fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    /*text-transform: uppercase;*/
+    color: #333;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    /* Ensure background color remains opaque when scrolled (text)*/
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menuButton {
+        display: none;
+}
+
+.menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.menu-button-label .white-bar:nth-child(1) {
+        top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+    top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+        top: 80%;
 }
 
   /* Dropdown Menu */
@@ -116,7 +206,11 @@ html {
     transition: 0.35s ease, width 0.35s ease;
     z-index: 90;
     overflow-y: auto;
-    font-family: 'Bebas Neue', sans-serif;}.nav-menu.dropped {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Men when Dropped*/
+.nav-menu.dropped {
     display: block;
     /* Show the dropdown menu when dropped class is added */
     height: 100vh;
@@ -124,13 +218,21 @@ html {
     transition: height 0.35s ease;
     font-size: 16pt;
     top: 100px;
-}  
-/* Adjustments for Drop-down Menu Items */
+}
+  /* Adjustments for Drop-down Menu Items */
 .drop-down-container {
     position: relative;
     width: 100%;
     text-align: center;
 }
+
+  /* Add hover effect for dropdown items */
+.drop-down-container .drop-down-item:hover {
+        color: #fff;
+      /* Background color when hovered */
+}
+
+  /* Adjust dropdown item styles */
 .drop-down-container .drop-down-item {
     display: block;
     padding: 15px 0;
@@ -138,53 +240,63 @@ html {
     font-size: 60px;
     text-decoration: none;
     transition: color 0.3s ease;
+      /* Added transition for smooth hover effect */
 }
-.drop-down-container .drop-down-item:hover {
+
+  /* NAV BAR - END */
+
+/*
+footer styles 
+*/
+
+footer {
+    text-align: center;
+    background-color: #345223
+;
+    padding: 30px;
+}
+.footer-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer p {
+    font-size: 18px;
     color: #fff;
 }
-.fixed-nav-bar .subheading {
-    margin-top: 70px;
+.footer a {
+    color: #DDA15E;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-.footer{
-        text-align: center;
-        font-size: 16pt;
-        background: #345223;
-        font-weight: none;
-        padding: 30px;
-        color: white;
+.footer a:hover {
+    color: #FEFAE0;
 }
-.footer-text{
-        margin-top: 10px;
-        margin-bottom: 10px;    
+.nav-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-.nav2{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 17pt;
+.p-text {
+    margin: 0 15px;
+    font-size: 20px;
+    color: #DDA15E;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-.p-text{
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: none;
-        padding-right: 40px;
+.p-text:hover {
+    color: #FEFAE0;
 }
-.p-text:hover{
-        color: white;
-        font-weight: bold;
-} 
-
 
 
 /* Form Page Styles */
-.form-body {
+body {
     background-image: url(https://static.wixstatic.com/media/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg/v1/fill/w_1322,h_1443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d0fd8c_4caede5af23146788d4c8c1c961351c7~mv2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .contact-container {
-    height: 900px;
+    height: 1000px;
     width: 1000px;
     background-color: #DDA15E;
     top: 50%;
@@ -290,7 +402,7 @@ html {
 
 .submit {
     padding: 30px 60px;
-    margin: 100px 400px;
+    margin: 80px 400px;
     background-color: #FEFAE0;
     color: #283618;
     font-family: "Montserrat", sans-serif;
@@ -373,29 +485,130 @@ a img {
 
 }
 
-
+.error {
+    height: 20px;
+    color:  #ff330e;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    margin-left: 105px;
+    font-weight: bold;
+}
 
 /*Media Queries*/
 /* Small devices (portrait phones) */
-@media only screen and (max-width: 600px) {
-   
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+    /* Adjust contact container */
+    .contact-container {
+        width: 800px;
+        margin-left: 100px;
+    }
+
+    /* Adjust form elements */
+    .form-group label,
+    .form-group input,
+    .form-names label,
+    .form-names input,
+    .form-email label,
+    .form-email input,
+    #message {
+        margin-left: 50px;
+    }
+
+    /* Adjust submit button */
+    .submit {
+        margin: 80px 250px;
+    }
+
+    /* Adjust grid container */
+    .grid-container {
+        grid-template-columns: 150px 300px 300px 150px;
+    }
 }
 
-/* Medium devices (landscape phones, tablets) */
-@media only screen and (min-width: 601px) and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
+    /* Adjust contact container */
+    .contact-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
 
+    .inline-form {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .contact-us,
+    .contact-para {
+        margin-left: 105px;
+        padding-bottom: 10px;
+    }
+
+    /* Adjust form elements */
+    .form-group label,
+    .form-group input,
+    #message {
+        margin-left: 20px;
+    }
+
+    .form-names,
+.form-email {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 75px;
 }
 
-/* Large devices (laptops/desktops) */
-@media only screen and (min-width: 993px) {
-
+.form-names label,
+.form-names input,
+.form-email label,
+.form-email input {
+    width: 100%; /* Ensure elements fit within parent container */
+    margin: 5px 0; /* Adjust margin for better spacing */
 }
 
-@media only screen and (orientation: portrait) {
 
-}
-@media only screen and (orientation: landscape) {
-    
+    /* Adjust submit button */
+    .submit {
+        margin: 20px auto;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        background-color: #D77028;
+        color: #FEFAE0;
+    }
+
+    .submit:hover {
+        background-color: #FEFAE0;
+        color: #283618;
+    }
+
+    /* Adjust grid container */
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: 100%;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
+  /* Footer adjustments */
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
 
