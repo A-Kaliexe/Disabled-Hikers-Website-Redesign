@@ -26,8 +26,7 @@ nav ul li a {
   font-family: "Montserrat", sans-serif;
 }
 
-
-/* MEDIA QUERIES   */
+/* MEDIA QUERIES - START */
 
 @media screen and (max-width: 768px) {
   .nav-menu {
@@ -35,239 +34,318 @@ nav ul li a {
   }
 }
 
+/* Work media queries */
+
+@media (max-width: 768px) {
+  .work-box {
+    width: 90%; /* Adjust width for narrower viewports */
+    margin: 5% auto; /* Adjust margin for vertical stacking */
+  }
+}
+
+/* Events media queries */
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-container .event {
+    width: 100%; /* Make each event take up the full width */
+    margin-bottom: 20px; /* Add some spacing between stacked events */
+  }
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 767px) {
+  .container-top {
+
+  }
+
+  .title {
+    font-size: 24px; /* Adjust the font size for smaller screens */
+  }
+
+  #subtitle {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .work-box {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .work-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .work-box h3 {
+    font-size: 20px;
+  }
+
+  .secondary {
+    padding: 20px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+/* Media query for medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your styles for medium screens here */
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+  /* Add your styles for large screens here */
+}
+
+/* MEDIA QUERIES - END
+
 /*End of Global Styles*/
 
- /* NAV BAR - START */
-    
-    /* Adjust dropdown container width */
-      /*.drop-down-container {
+/* NAV BAR - START */
+
+/* Adjust dropdown container width */
+/*.drop-down-container {
           width: 100%;
       }*/
-  
-  
-  
-  
-  
-  /* Navigation Bar */
-  .fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-    /* Change background color to opaque */
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+/* Navigation Bar */
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  /* Change background color to opaque */
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  backface-visibility: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .fixed-nav-bar .logo {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    /*text-transform: uppercase;*/
-    color: #333;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  /*text-transform: uppercase;*/
+  color: #333;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .community.scrolled {
-    min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled (text)*/
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+  min-height: 60px;
+  background-color: #fefae0;
+  /* Ensure background color remains opaque when scrolled (text)*/
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
 
 #menuButton {
-    display: none;
+  display: none;
 }
 
 .menu-button-label {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 101;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 101;
 }
 
 .menu-button-label .white-bar {
-    position: absolute;
-    height: 2px;
-    width: 66%;
-    background-color: #ccc;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
+  position: absolute;
+  height: 2px;
+  width: 66%;
+  background-color: #ccc;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
 }
 .menu-button-label .white-bar:nth-child(1) {
-    top: 20%;
+  top: 20%;
 }
 
 .menu-button-label .white-bar:nth-child(2) {
-    top: 50%;
+  top: 50%;
 }
 
 .menu-button-label .white-bar:nth-child(3) {
-    top: 80%;
+  top: 80%;
 }
-  
-  /**/
-  
-  
-  /* Global Nav Menu */
-  .fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-    /* Change background color to opaque */
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .content {
-      padding-top: 100px;
-  }
-  
-  .fixed-nav-bar .logo {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    /*text-transform: uppercase;*/
-    color: #333;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .community.scrolled {
-    min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled (text)*/
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
-}
-  
-  #menuButton {
-      display: none;
-  }
-  
-  .menu-button-label {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 101;
-  }
-  
-  .menu-button-label .white-bar {
-    position: absolute;
-    height: 2px;
-    width: 66%;
-    background-color: #ccc;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-button-label .white-bar:nth-child(1) {
-      top: 20%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(2) {
-      top: 50%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(3) {
-      top: 80%;
-  }
-  
-  
-  /* Dropdown Menu */
-  .nav-menu {
-    display: none;
-    /* Hide the dropdown menu by default */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 300px;
-    background-color: rgba(215,112,40, 0.7);
-    transition: 0.35s ease, width 0.35s ease;
-    z-index: 90;
-    overflow-y: auto;
-    font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  /*Men when Dropped*/
-  .nav-menu.dropped {
-    display: block;
-    /* Show the dropdown menu when dropped class is added */
-    height: 100vh;
-    padding: 50px 0;
-    transition: height 0.35s ease;
-    font-size: 16pt;
-    top: 100px;
-  }
-  /* Adjustments for Drop-down Menu Items */
-  .drop-down-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-  
-  /* Add hover effect for dropdown items */
-  .drop-down-container .drop-down-item:hover {
-      color: #fff;
-      /* Background color when hovered */
-  }
-  
-  /* Adjust dropdown item styles */
-  .drop-down-container .drop-down-item {
-    display: block;
-    padding: 15px 0;
-    color: #ccc;
-    font-size: 60px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-      /* Added transition for smooth hover effect */
-  }
-  
-  /* NAV BAR - END */
 
+/**/
+
+/* Global Nav Menu */
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  /* Change background color to opaque */
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  backface-visibility: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+  padding-top: 100px;
+}
+
+.fixed-nav-bar .logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  /*text-transform: uppercase;*/
+  color: #333;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.community.scrolled {
+  min-height: 60px;
+  background-color: #fefae0;
+  /* Ensure background color remains opaque when scrolled (text)*/
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menuButton {
+  display: none;
+}
+
+.menu-button-label {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu-button-label .white-bar {
+  position: absolute;
+  height: 2px;
+  width: 66%;
+  background-color: #ccc;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.menu-button-label .white-bar:nth-child(1) {
+  top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+  top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+  top: 80%;
+}
+
+/* Dropdown Menu */
+.nav-menu {
+  display: none;
+  /* Hide the dropdown menu by default */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  background-color: rgba(215, 112, 40, 0.7);
+  transition: 0.35s ease, width 0.35s ease;
+  z-index: 90;
+  overflow-y: auto;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/*Men when Dropped*/
+.nav-menu.dropped {
+  display: block;
+  /* Show the dropdown menu when dropped class is added */
+  height: 100vh;
+  padding: 50px 0;
+  transition: height 0.35s ease;
+  font-size: 16pt;
+  top: 100px;
+}
+/* Adjustments for Drop-down Menu Items */
+.drop-down-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Add hover effect for dropdown items */
+.drop-down-container .drop-down-item:hover {
+  color: #fff;
+  /* Background color when hovered */
+}
+
+/* Adjust dropdown item styles */
+.drop-down-container .drop-down-item {
+  display: block;
+  padding: 15px 0;
+  color: #ccc;
+  font-size: 60px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* Added transition for smooth hover effect */
+}
+
+/* NAV BAR - END */
+
+/* --------------------------------- */
 
 /* Index/Landing Page styles */
 .index {
   /* Add styles specific to the index page */
   background-color: #fefae0;
 
-  /* Index top image - START */
+  /* TOP IMAGE - START */
 
+  /* Top image itself */
   .container-top {
     position: relative;
     margin-top: 100px;
@@ -277,41 +355,25 @@ nav ul li a {
 
   .container-top > img {
     width: 100%;
-    height: 85vh;
+    height: 80vh;
     left: 0;
     object-fit: cover;
   }
 
-  /* OVERLAY - TBD 
-    .overlay {
-    position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.5s ease;
-  }
-    
-    .container:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, .3);
-  }
-    
-    */
-
+  /* Top image overlay text */
   .title,
   #subtitle {
     letter-spacing: 5px;
     display: block;
     position: absolute;
     width: 100%;
+    min-width: 400px;
     left: 0;
     top: 10vh;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20vh;
+    font-size: 15vh;
     font-weight: 750;
     background-color: #d7702898;
     padding: 1vh;
@@ -321,10 +383,10 @@ nav ul li a {
   }
 
   #subtitle {
-    top: 40vh;
+    top: 35vh;
     text-transform: capitalize;
     background-color: transparent;
-    font-size: 6vh;
+    font-size: 5vh;
     letter-spacing: 2px;
   }
 
@@ -332,7 +394,7 @@ nav ul li a {
     top: 3vh;
   }
   .container-top:hover #subtitle {
-    top: 36vh;
+    top: 30vh;
   }
 
   .button {
@@ -341,7 +403,7 @@ nav ul li a {
     left: 0;
     top: 60vh;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 8vh;
+    font-size: 6vh;
     font-weight: 20px;
     letter-spacing: 2px;
     text-align: center;
@@ -350,7 +412,7 @@ nav ul li a {
   }
 
   .button a {
-    width: 275px;
+    width: 12vw;
     padding: 5vh 3vw;
     text-align: center;
     color: white;
@@ -360,11 +422,12 @@ nav ul li a {
   }
 
   .container-top:hover .button {
-    opacity: 1;
+    opacity: 0.95;
   }
 
-  /* Index top image - END */
+  /* TOP IMAGE - END */
 
+  /* GENERAL PAGE STYLING - START */
   h2 {
     font-size: 75px;
     letter-spacing: 5px;
@@ -389,14 +452,7 @@ nav ul li a {
     color: #ffffff;
   }
 
-  /* BORDER STILL a WIP 
-    
-    #who {
-      outline: 2px solid #DDA15E;
-      z-index: 1;
-    }
-    
-    */
+  /* GENERAL PAGE STYLING - END */
 
   /* WHAT WE DO/WORK - START */
 
@@ -408,48 +464,179 @@ nav ul li a {
     height: 75vh;
   }
 
-  .box {
+  .work-box {
+    position: relative;
     flex: 1;
     overflow: hidden;
     transition: 0.7s;
-    margin: 0 2%;
+    margin: 0 0.5%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     line-height: 0;
+    min-height: 100px;
+    max-height: 490px;
   }
 
-  .box > img {
-    width: 200%;
-    height: calc(100%);
+  .work-box h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    color: #ffffff;
+    font-size: calc(200% + 1vh);
+    white-space: nowrap; /* Prevent text from wrapping initially */
+    text-overflow: clip; /* Display ellipsis for overflow text */
+    transition: 0.7s;
+  }
+
+  .work-box > img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     transition: 0.7s;
   }
 
-  .box > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 7vh;
-    line-height: 2.3;
-  }
-
-  .box:hover {
+  .work-box:hover {
     flex: 1 1 50%;
   }
-  .box:hover > img {
+  .work-box:hover > img {
     width: 100%;
-    height: 100%;
+    height: 150%;
+  }
+
+  .work-box:hover h3 {
+    font-size: calc(50% + 5vh); /* Increase font size on hover */
   }
 
   /* WHAT WE DO/WORK - END */
-  
-  
-  /* EVENTS */
-  
-  
-  
-  
+
+  /* EVENTS) - START */
+
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 30px;
+  }
+  .wrapper {
+    width: 33.3%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .w-content {
+    .frame {
+      width: 85%;
+      height: 65%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-color: transparent;
+    }
+
+    h2 {
+      margin-top: 0;
+      top: 50%;
+      transform: translatey(-50%);
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    &:hover {
+      .frame {
+        border-color: #fff;
+        transition: color 0.3s ease-in-out, all 0.3s ease-in-out;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+      }
+
+      opacity: 0.8;
+    }
+  }
+
+  .box {
+    position: relative;
+    max-height: 400px;
+    min-height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+      0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+      0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043),
+      0 50px 60px rgba(0, 0, 0, 0.06);
+
+    .hide {
+      opacity: 0;
+    }
+
+    .frame {
+      position: absolute;
+      border: 1px solid #fff;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h2 {
+      position: absolute;
+      color: #fff;
+      background-color: #34522399;
+      padding: 4vh 0px;
+      z-index: 2;
+      width: 100%;
+      transition: opacity 0.2s, transform 0.3s;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 2vw;
+    }
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover:before {
+      transition: all 0.3s ease-in-out;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  /* EVENTS - END */
+
+  /* VIDEO - START */
+
+  /* VIDEO - END */
+
   /* GUIDEBOOK */
-  
+
   .guidebook,
   .secondary {
     text-align: center;
@@ -462,71 +649,70 @@ nav ul li a {
 }
 /* Index/Landing Page styles - END */
 
-
 /* NEWSLETTER & DONATE */
 .news-donate {
-    background-color: #283618;
-    color: #fff;
-    padding: 50px 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  background-color: #283618;
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .newsletter,
 .support-us {
-    width: 45%;
+  width: 45%;
 }
 
 .newsletter h2,
 .support-us h2 {
-    margin-bottom: 20px;
-    color: #FEFAE0;
+  margin-bottom: 20px;
+  color: #fefae0;
 }
 
 .newsletter input[type="email"] {
-    width: 50%;
-    padding: 15px;
-    border-radius: 10px;
+  width: 50%;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /*Buttons*/
 .subscribe-btn,
 .donate-btn {
-    padding: 15px 25px;
-    background-color: #DDA15E;
-    color: #232323;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 15px 25px;
+  background-color: #dda15e;
+  color: #232323;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .subscribe-btn:hover,
 .donate-btn:hover {
-    background-color: #D77028;
+  background-color: #d77028;
 }
 
 /* FOOTER */
-.footer{
-        text-align: center;
-        font-size: 16pt;
-        background: #345223;
-        font-weight: none;
-        padding: 30px;
-        color: white;
-    }
-    .footer-text{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-.p-text{
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: none;
-        padding-right: 40px;
-    }
-    
-    .p-text:hover{
-        color: white;
-        font-weight: bold;
-    } 
+.footer {
+  text-align: center;
+  font-size: 16pt;
+  background: #345223;
+  font-weight: none;
+  padding: 30px;
+  color: white;
+}
+.footer-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.p-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+.p-text:hover {
+  color: white;
+  font-weight: bold;
+}

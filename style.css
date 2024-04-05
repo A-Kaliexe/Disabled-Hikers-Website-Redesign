@@ -1,0 +1,392 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.bebas-neue-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body .trail-guide {
+    font-family: "Bebas Neue", sans-serif;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    font-size: 25px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.new-h1 {
+    background-image: url('./images/hiking-image.jpg');
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: #345223;
+    color: #DDA15E;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: -7px;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+body .trail-guide .h1 {
+    color: #345223;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .trail-guide li {
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+}
+body .trail-guide .newsletter {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .trail-guide .main {
+    text-size-adjust: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.color-block-1 {
+    background-color: #FEFAE0;
+    width: 2500px;
+    border-top: 10px;
+    font-size: 50px;
+    margin-top: -65px;
+}
+
+#trail-guides {
+    font-size: 90px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 50px;
+}
+#interactive {
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+#distinct {
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 130px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.footer {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+}
+
+.h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#map {
+    align-items: center;
+}
+.news-donate {
+    background-color: #283618;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.newsletter,
+.support-us {
+    width: 45%;
+}
+.newsletter h2,
+.support-us h2 {
+    margin-bottom: 20px;
+}
+.newsletter input[type="email"] {
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+}
+/Buttons/
+.subscribe-btn,
+.donate-btn {
+    padding: 15px 25px;
+    background-color: #DDA15E;
+    color: #232323;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+.subscribe-btn:hover,
+.donate-btn:hover {
+    background-color: #D77028;
+}
+
+
+/* iFrame */
+iframe {
+    margin-left: 640px;
+}
+
+#track {
+    text-align: center;
+}
+
+/* Footer */
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+ /* Navigation Bar */
+ .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+.fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menuButton {
+    display: none;
+}
+
+.menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+.menu-button-label .white-bar:nth-child(1) {
+    top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+    top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+    top: 80%;
+}
+  
+  
+  
+  /* Global Nav Menu */
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content {
+      padding-top: 100px;
+  }
+  
+  .fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+  
+  #menuButton {
+      display: none;
+  }
+  
+  .menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+  }
+  
+  .menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button-label .white-bar:nth-child(1) {
+      top: 20%;
+  }
+  
+  .menu-button-label .white-bar:nth-child(2) {
+      top: 50%;
+  }
+  
+  .menu-button-label .white-bar:nth-child(3) {
+      top: 80%;
+  }
+  
+  
+  /* Dropdown Menu */
+  .nav-menu {
+    display: none;
+    /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    background-color: rgba(215,112,40, 0.7);
+    transition: 0.35s ease, width 0.35s ease;
+    z-index: 90;
+    overflow-y: auto;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  /*Menu when Dropped*/
+  .nav-menu.dropped {
+    display: block;
+    /* Show the dropdown menu when dropped class is added */
+    height: 100vh;
+    padding: 50px 0;
+    transition: height 0.35s ease;
+    font-size: 16pt;
+    top: 100px;
+  }
+  /* Adjustments for Drop-down Menu Items */
+  .drop-down-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Add hover effect for dropdown items */
+  .drop-down-container .drop-down-item:hover {
+      color: #fff;
+      /* Background color when hovered */
+  }
+  
+  /* Adjust dropdown item styles */
+  .drop-down-container .drop-down-item {
+    display: block;
+    padding: 15px 0;
+    color: #ccc;
+    font-size: 60px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+      /* Added transition for smooth hover effect */
+  }
+  
+  /* NAV BAR - END */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        width: 100%;
+    }
+}
+
+
+.h1-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trail-list {
+    flex: 1; 
+    margin-left: 150px;
+    margin-right: -10px;
+    margin-bottom: 80px;
+}
+
+.trail-list:last-child {
+    margin-right: 0;
+}
