@@ -1,20 +1,73 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Global Styles*/
+/* Add styles specific throughout entire website */
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
+    color: #283618;
+    background-color: #fefae0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+/* Navigation Bar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
 /* Typography */
-body,
-p,
-.nav-menu,
-.footer p,
-.newsletter input[type="email"],
-.p-text,
-.footer a {
+body {
+    line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
     color: #333;
+    /* Adjusted text color */
+    background-color: #f9f9f9ee;
+    /* Adjusted background color */
 }
 
 h1,
@@ -33,32 +86,18 @@ h1 {
     margin: 20px 0;
 }
 
+h2 {
+    font-size: 28px;
+
+}
+
 p {
     font-size: 16px;
+
     line-height: 1.8;
 }
 
-/* Global Styles */
-body {
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    color: #283618;
-    background-color: #fefae0;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Navbar */
+/* Global Nav Menu */
 .fixed-nav-bar {
     position: fixed;
     top: 0;
@@ -68,35 +107,8 @@ body {
     padding: 0 25px;
     box-sizing: border-box;
     background-color: #fdfdfd;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
 
-/* NAV BAR - START */
-    
-    /* Adjust dropdown container width */
-      /*.drop-down-container {
-          width: 100%;
-      }*/
-  
-  
-  
-  
-  
-  /* Navigation Bar */
-  .fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-    /* Change background color to opaque */
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.60);
     z-index: 100;
     backface-visibility: hidden;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -111,19 +123,18 @@ body {
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     color: #333;
     font-size: 28px;
     font-weight: 300;
     cursor: pointer;
     transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.community.scrolled {
+.fixed-nav-bar.scrolled {
     min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled (text)*/
+    background-color: #345223;
+    /* Ensure background color remains opaque when scrolled */
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -139,7 +150,7 @@ body {
     right: 25px;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 101;
+    z-index: 100;
 }
 
 .menu-button-label .white-bar {
@@ -151,6 +162,7 @@ body {
     transform: translateX(-50%);
     transition: background-color 0.3s ease;
 }
+
 .menu-button-label .white-bar:nth-child(1) {
     top: 20%;
 }
@@ -162,142 +174,69 @@ body {
 .menu-button-label .white-bar:nth-child(3) {
     top: 80%;
 }
-  
-  /**/
-  
-  
-  /* Global Nav Menu */
-  .fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-    /* Change background color to opaque */
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .content {
-      padding-top: 100px;
-  }
-  
-  .fixed-nav-bar .logo {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    /*text-transform: uppercase;*/
-    color: #333;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .community.scrolled {
-    min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled (text)*/
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
-}
-  
-  #menuButton {
-      display: none;
-  }
-  
-  .menu-button-label {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 101;
-  }
-  
-  .menu-button-label .white-bar {
-    position: absolute;
-    height: 2px;
-    width: 66%;
-    background-color: #ccc;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-button-label .white-bar:nth-child(1) {
-      top: 20%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(2) {
-      top: 50%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(3) {
-      top: 80%;
-  }
-  
-  
-  /* Dropdown Menu */
-  .nav-menu {
+
+
+/* Dropdown Menu */
+.nav-menu {
     display: none;
     /* Hide the dropdown menu by default */
     position: absolute;
     top: 60px;
     right: 0;
     width: 300px;
-    background-color: rgba(215,112,40, 0.7);
+    background-color: rgba(0, 0, 0, 0.753);
     transition: 0.35s ease, width 0.35s ease;
-    z-index: 90;
+    z-index: 80;
     overflow-y: auto;
-    font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  /*Men when Dropped*/
-  .nav-menu.dropped {
+}
+
+/*Men when Dropped*/
+.nav-menu.dropped {
     display: block;
     /* Show the dropdown menu when dropped class is added */
-    height: 100vh;
-    padding: 50px 0;
-    transition: height 0.35s ease;
-    font-size: 16pt;
-    top: 100px;
-  }
-  /* Adjustments for Drop-down Menu Items */
-  .drop-down-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
+    height: 35vh;
+    padding: 5px 0;
+    transition: height 0.45s ease;
 }
-  
-  /* Add hover effect for dropdown items */
-  .drop-down-container .drop-down-item:hover {
-      color: #fff;
-      /* Background color when hovered */
-  }
-  
-  /* Adjust dropdown item styles */
-  .drop-down-container .drop-down-item {
+
+/* Adjustments for Drop-down Menu Items */
+* Your existing CSS styles */
+
+/* Add hover effect for dropdown items */
+.drop-down-container .drop-down-item:hover {
+    color: #fff;
+    background-color: #345223;
+    /* Background color when hovered */
+}
+
+/* Adjust dropdown item styles */
+.drop-down-container .drop-down-item {
     display: block;
     padding: 15px 0;
-    color: #ccc;
-    font-size: 60px;
+    color: #D77028;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
-      /* Added transition for smooth hover effect */
-  }
-  
-  /* NAV BAR - END */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Added transition for smooth hover effect */
+}
 
-/* Newsletter and Donate Section */
+/* Updated responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.753);
+        /* Ensure background color remains visible */
+    }
+
+    /* Adjust dropdown container width */
+    .drop-down-container {
+        width: 100%;
+    }
+}
+
+/*Newsletter and Donate Section*/
+/* newsletter and donate section */
 .news-donate {
     background-color: #283618;
     color: #fff;
@@ -306,6 +245,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
+
 
 .newsletter,
 .support-us {
@@ -323,24 +263,23 @@ body {
     border-radius: 10px;
 }
 
-/* Buttons */
+/*Buttons*/
 .subscribe-btn,
-.donate-btn,
-.cta-btn {
+.donate-btn {
     padding: 15px 25px;
     background-color: #DDA15E;
     color: #232323;
     border: none;
     border-radius: 35px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .subscribe-btn:hover,
-.donate-btn:hover,
-.cta-btn:hover {
+.donate-btn:hover {
     background-color: #D77028;
 }
+
+
 
 /* Banner */
 .banner {
@@ -374,6 +313,64 @@ h1 {
     height: auto;
 }
 
+/* Community Logo */
+.logo-img {
+    max-width: 20px;
+    max-height: 20%;
+}
+
+/* Community Icon Images */
+.feature img {
+    width: 50px;
+    height: auto;
+}
+
+/* Community Sections */
+.story,
+.insta-widget,
+.upcoming-events,
+.social-media,
+.feature,
+.Background__Overlay-sc-4lq1r6-2 djWGwD {
+    background-color: #FEFAE0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.185);
+}
+
+.story h2,
+.feature h2 {
+    font-size: 60px;
+    color: #283618;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #D77028;
+    font-size: 50px;
+}
+
+.story {
+    margin-left: 10px;
+}
+
+.story p,
+.feature p {
+    margin: 20px 40px;
+}
+
+/*Social Media*/
+span,
+a {
+    color: #345223;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
 /* Feature Styles */
 .feature-wrapper {
     display: flex;
@@ -386,13 +383,6 @@ h1 {
     text-align: center;
     width: 30%;
     background-color: #DDA15E;
-    transition: background-color 0.3s ease;
-}
-
-.feature:hover {
-    background-color: #fefae0;
-    color: #D77028;
-    box-shadow: 0 4px 10px rgba(238, 109, 4, 0.815);
 }
 
 .feature img {
@@ -400,55 +390,155 @@ h1 {
     max-width: 100px;
 }
 
-/* Footer */
-footer {
+/* Buttons */
+.cta-btn {
+    margin: 40px;
+    padding: 10px 25px;
+    background-color: #DDA15E;
+    color: #232323;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #D77028;
+}
+
+.footer {
     text-align: center;
-    background-color: #345223;
+    font-size: 16pt;
+    background: #345223;
+    font-weight: none;
     padding: 30px;
+    color: white;
 }
 
 .footer-text {
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
 
-.footer p {
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer a {
-    color: #DDA15E;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer a:hover {
-    color: #FEFAE0;
-}
-
-.nav-2 {
+.nav2 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    text-align: center;
+    font-size: 17pt;
 }
 
-.p-text {
-    margin: 0 15px;
-    font-size: 20px;
-    color: #DDA15E;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.p-text:hover {
-    color: #FEFAE0;
-}
 
-/* Media Queries */
+
+
+
+
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+
+    /* Adjust font sizes for better readability */
     body {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    /* Adjust logo size */
+    .fixed-nav-bar .logo {
+        font-size: 24px;
+    }
+
+    /* Make menu button visible */
+    .menu-button-label {
+        display: block;
+    }
+
+    /* Adjust navigation menu */
+    .nav-menu {
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.753);
+    }
+
+    /* Adjust dropdown container width */
+    .drop-down-container {
+        width: 100%;
+    }
+
+    /* Adjust layout for smaller screens */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-layout,
+    .right-layout {
+        width: 100%;
+    }
+
+    /* Adjust font sizes for better readability */
+    p {
+        font-size: 14px;
+    }
+
+    /* Increase button size */
+    .cta-btn,
+    .subscribe-btn,
+    .donate-btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    /* Adjust padding and margins */
+    .story p,
+    .feature p {
+        margin: 10px 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .news-donate {
+            flex-direction: row;
+        }
+
+        /* Adjust input field sizes */
+        .newsletter input[type="email"] {
+            width: 70%;
+            padding: 10px;
+        }
+
+        /* Adjust spacing between form elements */
+        .newsletter input[type="email"],
+        .subscribe-btn {
+            margin-bottom: 10px;
+        }
+
+
+
+        /* Adjust grid-based layout */
+        .feature-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Adjust footer layout */
+        footer {
+            padding: 20px;
+        }
+
+        /* Adjust background images or patterns */
+        .banner {
+            background-size: contain;
+        }
+
+        /* Adjust borders */
+        .story,
+        .insta-widget,
+        .upcoming-events,
+        .social-media,
+        .feature,
+        .slideshow-container {
+            border-radius: 5px;
+        }
     }
 
     .fixed-nav-bar .logo {
@@ -469,30 +559,3 @@ footer {
     .drop-down-container {
         width: 100%;
     }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .left-layout,
-    .right-layout {
-        width: 100%;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .cta-btn,
-    .subscribe-btn,
-    .donate-btn {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
-    .story p,
-    .feature p {
-        margin: 10px 20px;
-    }
-}
