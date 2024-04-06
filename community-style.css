@@ -1,30 +1,19 @@
-/* Reset */
-*,
-*::before,
-*::after {
-    margin: 0;
+/* Reset CSS */
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 /* Typography */
-body,
-p,
-.nav-menu,
-.footer p,
-.newsletter input[type="email"],
-.p-text,
-.footer a {
+body {
+    line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
     color: #333;
+    background-color: #f9f9f9ee;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1px;
 }
@@ -35,33 +24,28 @@ h1 {
     margin: 20px 0;
 }
 
+h2 {
+    font-size: 28px;
+}
+
 p {
     font-size: 16px;
     line-height: 1.8;
 }
 
-/* Global Styles */
-body {
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    color: #283618;
-    background-color: #fefae0;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Navbar */
-.fixed-nav-bar {
+ /* NAV BAR - START */
+    
+    /* Adjust dropdown container width */
+      /*.drop-down-container {
+          width: 100%;
+      }*/
+  
+  
+  
+  
+  
+  /* Navigation Bar */
+  .fixed-nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,10 +54,15 @@ body {
     padding: 0 25px;
     box-sizing: border-box;
     background-color: #fdfdfd;
+    /* Change background color to opaque */
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
     z-index: 100;
     backface-visibility: hidden;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content {
+    padding-top: 100px;
 }
 
 .fixed-nav-bar .logo {
@@ -81,34 +70,214 @@ body {
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+    /*text-transform: uppercase;*/
     color: #333;
     font-size: 28px;
     font-weight: 300;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Dropdown Menu */
-.nav-menu {
+.community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    /* Ensure background color remains opaque when scrolled (text)*/
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menuButton {
     display: none;
+}
+
+.menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+.menu-button-label .white-bar:nth-child(1) {
+    top: 20%;
+}
+
+.menu-button-label .white-bar:nth-child(2) {
+    top: 50%;
+}
+
+.menu-button-label .white-bar:nth-child(3) {
+    top: 80%;
+}
+  
+  /**/
+  
+  
+  /* Global Nav Menu */
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    /* Change background color to opaque */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content {
+      padding-top: 100px;
+  }
+  
+  .fixed-nav-bar .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    /*text-transform: uppercase;*/
+    color: #333;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .community.scrolled {
+    min-height: 60px;
+    background-color: #fefae0;
+    /* Ensure background color remains opaque when scrolled (text)*/
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+}
+  
+  #menuButton {
+      display: none;
+  }
+  
+  .menu-button-label {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 101;
+  }
+  
+  .menu-button-label .white-bar {
+    position: absolute;
+    height: 2px;
+    width: 66%;
+    background-color: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button-label .white-bar:nth-child(1) {
+      top: 20%;
+  }
+  
+  .menu-button-label .white-bar:nth-child(2) {
+      top: 50%;
+  }
+  
+  .menu-button-label .white-bar:nth-child(3) {
+      top: 80%;
+  }
+  
+  
+  /* Dropdown Menu */
+  .nav-menu {
+    display: none;
+    /* Hide the dropdown menu by default */
     position: absolute;
     top: 60px;
     right: 0;
     width: 300px;
-    background-color: rgba(215, 112, 40, 0.7);
+    background-color: rgba(215,112,40, 0.7);
     transition: 0.35s ease, width 0.35s ease;
     z-index: 90;
     overflow-y: auto;
     font-family: 'Bebas Neue', sans-serif;
-}
-
-.nav-menu.dropped {
+  }
+  
+  /*Men when Dropped*/
+  .nav-menu.dropped {
     display: block;
+    /* Show the dropdown menu when dropped class is added */
     height: 100vh;
     padding: 50px 0;
     transition: height 0.35s ease;
     font-size: 16pt;
     top: 100px;
+  }
+  /* Adjustments for Drop-down Menu Items */
+  .drop-down-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Add hover effect for dropdown items */
+  .drop-down-container .drop-down-item:hover {
+      color: #fff;
+      /* Background color when hovered */
+  }
+  
+  /* Adjust dropdown item styles */
+  .drop-down-container .drop-down-item {
+    display: block;
+    padding: 15px 0;
+    color: #ccc;
+    font-size: 60px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+      /* Added transition for smooth hover effect */
+  }
+  
+  /* NAV BAR - END */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .fixed-nav-bar .logo {
+        left: 20px;
+        font-size: 24px;
+    }
+
+    .menu-button-label {
+        right: 15px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        background-color: rgba(215, 112, 40, 0.9);
+    }
+
+    .nav-menu.dropped {
+        top: 60px;
+    }
+
+    .drop-down-container .drop-down-item {
+        font-size: 20px;
+    }
 }
 
 /* Newsletter and Donate Section */
@@ -137,22 +306,18 @@ body {
     border-radius: 10px;
 }
 
-/* Buttons */
 .subscribe-btn,
-.donate-btn,
-.cta-btn {
+.donate-btn {
     padding: 15px 25px;
     background-color: #DDA15E;
     color: #232323;
     border: none;
     border-radius: 35px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .subscribe-btn:hover,
-.donate-btn:hover,
-.cta-btn:hover {
+.donate-btn:hover {
     background-color: #D77028;
 }
 
@@ -188,7 +353,110 @@ h1 {
     height: auto;
 }
 
-/* Feature Styles */
+/* Community Logo */
+.logo-img {
+    max-width: 20px;
+    max-height: 20%;
+}
+
+/* Community Icon Images */
+.feature img {
+    width: 50px;
+    height: auto;
+}
+
+/* Community Sections */
+.story,
+.insta-widget,
+.upcoming-events,
+.social-media,
+.feature,
+.Background__Overlay-sc-4lq1r6-2.djWGwD {
+    background-color: #FEFAE0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.185);
+}
+
+.story h2,
+.feature h2 {
+    font-size: 60px;
+    color: #283618;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #D77028;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #283618;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Insta Widget */
+.instagram-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instagram-photo {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+.instagram-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Social Media Links */
+.social-media a {
+    color: #283618;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #D77028;
+}
+
+/* Upcoming Events */
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    color: #D77028;
+}
+
+.event-date {
+    color: #283618;
+    margin-bottom: 10px;
+}
+
+.event-details {
+    color: #333;
+}
+
 .feature-wrapper {
     display: flex;
     justify-content: space-around;
@@ -257,56 +525,4 @@ footer {
 
 .p-text:hover {
     color: #FEFAE0;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    .fixed-nav-bar .logo {
-        font-size: 24px;
-    }
-
-    .menu-button-label {
-        display: block;
-    }
-
-    .nav-menu {
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.753);
-    }
-
-    .drop-down-container {
-        width: 100%;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .left-layout,
-    .right-layout {
-        width: 100%;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .cta-btn,
-    .subscribe-btn,
-    .donate-btn {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
-    .story p,
-    .feature p {
-        margin: 10px 20px;
-    }
 }
