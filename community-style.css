@@ -1,10 +1,8 @@
-
-/* Navigation Bar */
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
 }
 
 /* Typography */
@@ -12,17 +10,10 @@ body {
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
     color: #333;
-    /* Adjusted text color */
     background-color: #f9f9f9ee;
-    /* Adjusted background color */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1px;
 }
@@ -35,29 +26,15 @@ h1 {
 
 h2 {
     font-size: 28px;
-
 }
 
 p {
     font-size: 16px;
-
     line-height: 1.8;
 }
 
 /* Global Nav Menu */
- /* NAV BAR - START */
-    
-    /* Adjust dropdown container width */
-      /*.drop-down-container {
-          width: 100%;
-      }*/
-  
-  
-  
-  
-  
-  /* Navigation Bar */
-  .fixed-nav-bar {
+.fixed-nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +43,6 @@ p {
     padding: 0 25px;
     box-sizing: border-box;
     background-color: #fdfdfd;
-    /* Change background color to opaque */
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
     z-index: 100;
     backface-visibility: hidden;
@@ -82,7 +58,6 @@ p {
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
-    /*text-transform: uppercase;*/
     color: #333;
     font-size: 28px;
     font-weight: 300;
@@ -94,7 +69,6 @@ p {
 .community.scrolled {
     min-height: 60px;
     background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled (text)*/
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -122,6 +96,7 @@ p {
     transform: translateX(-50%);
     transition: background-color 0.3s ease;
 }
+
 .menu-button-label .white-bar:nth-child(1) {
     top: 20%;
 }
@@ -133,169 +108,75 @@ p {
 .menu-button-label .white-bar:nth-child(3) {
     top: 80%;
 }
-  
-  /**/
-  
-  
-  /* Global Nav Menu */
-  .fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-    /* Change background color to opaque */
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    backface-visibility: hidden;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .content {
-      padding-top: 100px;
-  }
-  
-  .fixed-nav-bar .logo {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    /*text-transform: uppercase;*/
-    color: #333;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .community.scrolled {
-    min-height: 60px;
-    background-color: #fefae0;
-    /* Ensure background color remains opaque when scrolled (text)*/
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
-}
-  
-  #menuButton {
-      display: none;
-  }
-  
-  .menu-button-label {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 101;
-  }
-  
-  .menu-button-label .white-bar {
-    position: absolute;
-    height: 2px;
-    width: 66%;
-    background-color: #ccc;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-button-label .white-bar:nth-child(1) {
-      top: 20%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(2) {
-      top: 50%;
-  }
-  
-  .menu-button-label .white-bar:nth-child(3) {
-      top: 80%;
-  }
-  
-  
-  /* Dropdown Menu */
-  .nav-menu {
+
+/* Dropdown Menu */
+.nav-menu {
     display: none;
-    /* Hide the dropdown menu by default */
     position: absolute;
     top: 60px;
     right: 0;
     width: 300px;
-    background-color: rgba(215,112,40, 0.7);
+    background-color: rgba(215, 112, 40, 0.7);
     transition: 0.35s ease, width 0.35s ease;
     z-index: 90;
     overflow-y: auto;
     font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  /*Men when Dropped*/
-  .nav-menu.dropped {
+}
+
+.nav-menu.dropped {
     display: block;
-    /* Show the dropdown menu when dropped class is added */
     height: 100vh;
     padding: 50px 0;
     transition: height 0.35s ease;
     font-size: 16pt;
     top: 100px;
-  }
-  /* Adjustments for Drop-down Menu Items */
-  .drop-down-container {
+}
+
+.drop-down-container {
     position: relative;
     width: 100%;
     text-align: center;
 }
-  
-  /* Add hover effect for dropdown items */
-  .drop-down-container .drop-down-item:hover {
-      color: #fff;
-      /* Background color when hovered */
-  }
-  
-  /* Adjust dropdown item styles */
-  .drop-down-container .drop-down-item {
+
+.drop-down-container .drop-down-item {
     display: block;
     padding: 15px 0;
     color: #ccc;
     font-size: 60px;
     text-decoration: none;
     transition: color 0.3s ease;
-      /* Added transition for smooth hover effect */
-  }
-  
-  /* NAV BAR - END */
-
-@media screen and (max-width: 768px) {
-        /* Adjustments for Navigation Bar */
-        .fixed-nav-bar .logo {
-          left: 20px; /* Adjust the left position */
-          font-size: 24px; /* Reduce font size */
-        }
-      
-        .menu-button-label {
-          right: 15px; /* Adjust the right position */
-        }
-      
-        /* Adjust Dropdown Menu */
-        .nav-menu {
-          width: 100%; /* Take full width */
-          background-color: rgba(215,112,40, 0.9); /* Adjust background color */
-        }
-      
-        .nav-menu.dropped {
-          top: 60px; /* Adjust top position */
-        }
-      
-        .drop-down-container .drop-down-item {
-          font-size: 20px; /* Adjust font size */
-        }
 }
 
-/*Newsletter and Donate Section*/
-/* newsletter and donate section */
+.drop-down-container .drop-down-item:hover {
+    color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .fixed-nav-bar .logo {
+        left: 20px;
+        font-size: 24px;
+    }
+
+    .menu-button-label {
+        right: 15px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        background-color: rgba(215, 112, 40, 0.9);
+    }
+
+    .nav-menu.dropped {
+        top: 60px;
+    }
+
+    .drop-down-container .drop-down-item {
+        font-size: 20px;
+    }
+}
+
+/* Newsletter and Donate Section */
 .news-donate {
     background-color: #283618;
     color: #fff;
@@ -304,7 +185,6 @@ p {
     align-items: flex-start;
     justify-content: space-between;
 }
-
 
 .newsletter,
 .support-us {
@@ -322,7 +202,6 @@ p {
     border-radius: 10px;
 }
 
-/*Buttons*/
 .subscribe-btn,
 .donate-btn {
     padding: 15px 25px;
@@ -337,8 +216,6 @@ p {
 .donate-btn:hover {
     background-color: #D77028;
 }
-
-
 
 /* Banner */
 .banner {
@@ -390,7 +267,7 @@ h1 {
 .upcoming-events,
 .social-media,
 .feature,
-.Background__Overlay-sc-4lq1r6-2 djWGwD {
+.Background__Overlay-sc-4lq1r6-2.djWGwD {
     background-color: #FEFAE0;
     padding: 30px;
     border-radius: 10px;
@@ -408,202 +285,92 @@ h1 {
 
 h2 {
     color: #D77028;
-    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-.story {
-    margin-left: 10px;
+h3 {
+    color: #283618;
+    margin-bottom: 20px;
 }
 
-.story p,
-.feature p {
-    margin: 20px 40px;
+p {
+    font-size: 18px;
+    color: #333;
 }
 
-/*Social Media*/
-span,
-a {
-    color: #345223;
-    font-weight: bold;
-    font-size: large;
-}
-
-
-
-/* Feature Styles */
-.feature-wrapper {
+/* Insta Widget */
+.instagram-photos {
     display: flex;
-    justify-content: space-around;
-    margin: 30px;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.feature {
-    text-align: center;
-    width: 30%;
-    background-color: #DDA15E;
+.instagram-photo {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
 }
 
-.feature:hover {
-    background-color: #fefae0;
-    color: #D77028;
-    box-shadow: 0 4px 10px rgba(238, 109, 4, 0.815);
-}
-
-.feature img {
+.instagram-photo img {
     width: 100%;
-    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Buttons */
-.cta-btn {
-    margin: 40px;
-    padding: 10px 25px;
-    background-color: #DDA15E;
-    color: #232323;
-    border: none;
-    border-radius: 35px;
-    cursor: pointer;
+/* Social Media Links */
+.social-media a {
+    color: #283618;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
 }
 
-.cta-btn:hover {
-    background-color: #D77028;
+.social-media a:hover {
+    color: #D77028;
 }
 
-.footer {
-    text-align: center;
-    font-size: 18pt;
-    background: #345223;
-    font-weight: none;
-    padding: 30px;
-    color: white;
-}
-
-.footer-text {
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-
-.nav2 {
+/* Upcoming Events */
+.events {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 17pt;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+.event {
+    margin-bottom: 20px;
+}
 
+.event h3 {
+    color: #D77028;
+}
 
+.event-date {
+    color: #283618;
+    margin-bottom: 10px;
+}
 
+.event-details {
+    color: #333;
+}
 
+/* Footer */
+.footer {
+    background-color: #283618;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
 
+.footer p {
+    margin-bottom: 20px;
+}
 
+.footer a {
+    color: #FEFAE0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-
-    /* Adjust font sizes for better readability */
-    body {
-        font-size: 16px;
-    }
-
-    /* Adjust logo size */
-    .fixed-nav-bar .logo {
-        font-size: 24px;
-    }
-
-    /* Make menu button visible */
-    .menu-button-label {
-        display: block;
-    }
-
-    /* Adjust navigation menu */
-    .nav-menu {
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.753);
-    }
-
-    /* Adjust dropdown container width */
-    .drop-down-container {
-        width: 100%;
-    }
-
-    /* Adjust layout for smaller screens */
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .left-layout,
-    .right-layout {
-        width: 100%;
-    }
-
-    /* Adjust font sizes for better readability */
-    p {
-        font-size: 14px;
-    }
-
-    /* Increase button size */
-    .cta-btn,
-    .subscribe-btn,
-    .donate-btn {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
-    /* Adjust padding and margins */
-    .story p,
-    .feature p {
-        margin: 10px 20px;
-    }
-
-    @media screen and (min-width: 768px) {
-        .news-donate {
-            flex-direction: row;
-        }
-
-        /* Adjust input field sizes */
-        .newsletter input[type="email"] {
-            width: 70%;
-            padding: 10px;
-        }
-
-        /* Adjust spacing between form elements */
-        .newsletter input[type="email"],
-        .subscribe-btn {
-            margin-bottom: 10px;
-        }
-
-
-
-        /* Adjust grid-based layout */
-        .feature-wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Adjust footer layout */
-        footer {
-            padding: 20px;
-        }
-
-        /* Adjust background images or patterns */
-        .banner {
-            background-size: contain;
-        }
-
-        /* Adjust borders */
-        .story,
-        .insta-widget,
-        .upcoming-events,
-        .social-media,
-        .feature,
-        .slideshow-container {
-            border-radius: 5px;
-        }
-    }
-
-   
+.footer a:hover {
+    color: #D77028;
+}
