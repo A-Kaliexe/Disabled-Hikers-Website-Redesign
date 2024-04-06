@@ -249,10 +249,8 @@ html {
 footer styles 
 */
 
-footer {
-    text-align: center;
-    background-color: #345223
-;
+footer { text-align: center;
+    background-color: #345223;
     padding: 30px;
 }
 .footer-text {
@@ -286,7 +284,6 @@ footer {
 .p-text:hover {
     color: #FEFAE0;
 }
-
 
 /* Form Page Styles */
 body {
@@ -612,3 +609,69 @@ a img {
     }
 }
 
+/* Media Queries for Extra Small Devices (Mobile) */
+@media only screen and (max-width: 576px) {
+    /* Adjust contact container */
+    .contact-container {
+        width: 90%;
+        margin: 100px auto; /* Adjust margin for better centering */
+        padding: 20px;
+    }
+
+    /* Adjust font sizes for better fit */
+    .contact-para,
+    .speaking-req,
+    .form-group label,
+    .form-names label,
+    .form-email label,
+    #message {
+        font-size: 12px; /* Reduce font size for better fit */
+    }
+
+    .contact-us, 
+    .speak-header {
+        font-size: 16px;
+    }
+
+    /* Adjust form elements */
+    .form-group input,
+    .form-names input,
+    .form-email input,
+    #message {
+        margin-left: 20px;
+        margin-right: 20px; /* Add right margin for better spacing */
+        font-size: 12px; /* Reduce font size for better fit */
+    }
+
+    /* Adjust submit button */
+    .submit {
+        margin: 20px auto;
+        width: 90%; /* Adjust width for better fit */
+        padding: 10px;
+        position: relative;
+        background-color: #D77028;
+        color: #FEFAE0;
+        font-size: 16px; /* Reduce font size for better fit */
+    }
+
+    .submit:hover {
+        background-color: #FEFAE0;
+        color: #283618;
+    }
+
+    /* Adjust grid container */
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: 100%;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        width: 100%; /* Adjust width for better fit */
+        margin: 0;
+    }
+}
