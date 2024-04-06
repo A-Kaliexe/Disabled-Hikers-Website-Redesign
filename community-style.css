@@ -9,7 +9,7 @@
 body {
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+
     background-color: #f9f9f9ee;
 }
 
@@ -23,14 +23,9 @@ h6 {
     letter-spacing: 1px;
 }
 
-h1 {
-    font-size: 36px;
-    text-align: center;
-    margin: 20px 0;
-}
 
 h2 {
-    font-size: 28px;
+    font-size: 48px;
 }
 
 p {
@@ -296,6 +291,10 @@ p {
     justify-content: space-between;
 }
 
+#text {
+    color: #FEFAE0
+}
+
 .newsletter,
 .support-us {
     width: 45%;
@@ -322,6 +321,15 @@ p {
     border: none;
     border-radius: 35px;
     cursor: pointer;
+
+}
+
+.cta-btn,
+.cta-btn a {
+    margin: 30px;
+    padding: 10px 20px;
+    color: #283618;
+    font-weight: bolder;
 }
 
 .subscribe-btn:hover,
@@ -374,6 +382,8 @@ h1 {
     height: auto;
 }
 
+
+
 /* Community Sections */
 .story,
 .insta-widget,
@@ -396,6 +406,8 @@ h1 {
     margin-bottom: 20px;
 }
 
+
+
 h2 {
     color: #D77028;
     margin-bottom: 20px;
@@ -409,6 +421,12 @@ h3 {
 p {
     font-size: 18px;
     color: #333;
+}
+
+.news-donate p {
+    font-size: 18px;
+    color: #FEFAE0;
+    margin-bottom: 20px;
 }
 
 /* Insta Widget */
@@ -434,7 +452,8 @@ p {
     color: #283618;
     text-decoration: none;
     font-size: 20px;
-    margin-right: 20px;
+    font-weight: bolder;
+
     transition: color 0.3s ease;
 }
 
